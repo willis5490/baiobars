@@ -26,6 +26,7 @@ class HeaderHome extends Component {
 
   // render nav
   render() {
+      console.log(this.props)
     return (
       <div>
           <div style={this.style1}  uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
@@ -46,7 +47,7 @@ class HeaderHome extends Component {
                           <hr className="uk-divider-vertical uk-margin-auto-vertical" style={this.style2}></hr>
                           <li className={this.props.cart}>
                             <div id='cartContainer'>
-                                <p style={{color:'white'}} id='cartItemsNumber'>{0}</p>
+                                <p style={{color:'white'}} id='cartItemsNumber'>{this.props.store.checkout.lineItems.length}</p>
                                 </div>
                                 <a id='cartPicture' style={{backgroundColor:'#EC2B2C', color:'white', fontWeight:this.props.cart, fontSize:'20px' }} href="/ShoppingCart"><i className="fas fa-2x fa-shopping-cart uk-margin-small-right"></i> CART</a>
                           </li>
@@ -69,7 +70,7 @@ class HeaderHome extends Component {
                                               <a style={this.style1}  className="uk-offcanvas-close" uk-close>X</a>
                                               <li className={this.props.cart}>
                                                     <div id='cartContainerMobile'>
-                                                        <p style={{color:'white'}} id='cartItemsNumberMobile'>{0}</p>
+                                                        <p style={{color:'white'}} id='cartItemsNumberMobile'>{this.props.store.checkout.lineItems.length}</p>
                                                         </div>
                                                         <a id='cartPicture' style={{backgroundColor:'#EC2B2C', color:'white', fontWeight:this.props.cart, fontSize:'20px' }} href="/ShoppingCart"><i className="fas fa-2x fa-shopping-cart uk-margin-small-right"></i> CART</a>
                                                 </li>

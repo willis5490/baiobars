@@ -38,6 +38,7 @@ class Header extends Component {
 
   // render nav
   render() {
+    console.log(this.props)
     return (
       <div>
         <div style={this.style1}  uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
@@ -58,7 +59,7 @@ class Header extends Component {
                           <hr className="uk-divider-vertical uk-margin-auto-vertical" style={this.style2}></hr>
                           <li className={this.props.cart}>
                             <div id='cartContainer'>
-                                <p id='cartItemsNumber'>{0}</p>
+                                <p id='cartItemsNumber'>{this.props.store.checkout.lineItems.length}</p>
                                 </div>
                                 <a id='cartPicture' style={{backgroundColor:'white', color:'black', fontSize:'20px', fontWeight:this.props.cart }} href="/ShoppingCart"><i className="fas fa-2x fa-shopping-cart uk-margin-small-right"></i> CART</a>
                           </li>
@@ -81,7 +82,7 @@ class Header extends Component {
                                               <a style={this.style1}  className="uk-offcanvas-close" uk-close>X</a>
                                               <li className={this.props.cart}>
                                                     <div id='cartContainerMobile'>
-                                                        <p style={{color:'black'}} id='cartItemsNumberMobile'>{0}</p>
+                                                        <p style={{color:'black'}} id='cartItemsNumberMobile'>{this.props.store.checkout.lineItems.length}</p>
                                                         </div>
                                                         <a id='cartPicture' style={{backgroundColor:'white', color:'black', fontSize:'20px', fontWeight:this.props.cart }} href="/ShoppingCart"><i className="fas fa-2x fa-shopping-cart uk-margin-small-right"></i> CART</a>
                                                 </li>
