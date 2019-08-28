@@ -1,0 +1,31 @@
+{
+  "name": "baiobars",
+  "version": "1.0.0",
+  "description": "baio bars website",
+  "main": "server.js",
+  "repository": "git@github.com:willis5490/baiobars.git",
+  "author": "William Stearns <wcstearns@yahoo.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && yarn start:prod || yarn start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"yarn run client\"",
+    "client": "cd client && yarn start",
+    "seed": "node scripts/seedDB.js",
+    "install": "cd client && yarn install",
+    "build": "cd client && yarn build",
+    "heroku-postbuild": "yarn build"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.10"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.16.4",
+    "if-env": "^1.0.4"
+  }
+}

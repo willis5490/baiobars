@@ -1,0 +1,684 @@
+
+/* General */
+h1,h2{
+    font-family: 'Montserrat', sans-serif !important;
+}
+p,h3,h4,h5,h6{
+    color:  #6D6E71;
+}
+
+/* NAV */
+#cartContainer{
+    
+    position: relative;
+}
+#cartItemsNumber{
+    top: -3px;
+    right: 80px;
+    position: absolute;
+}
+
+#cartContainerMobile{
+    position: relative;
+    height: 20px;
+}
+#cartItemsNumberMobile{
+    top: 0px;
+    left:20px;
+    position: absolute;
+}
+#mobileMenu{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+#logo-nav{
+    width: 75px;
+    height: 50px;    
+}
+.uk-navbar-nav>li>a{
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+
+/* CRICKET FLOUR PAGE */
+
+#flourWrapper3{
+    background-color: black;
+}
+#flourWrapper5{
+    background-color: #EAEAEB;
+}
+#flourWrapper6{
+    background: linear-gradient(180deg, #EAEAEB 70%, white 30%);
+}
+#instagramcontainer{
+    background-color: white;
+}
+#flourWrapper7{
+    background-color: #4B4118;
+}
+.flourIcons{
+    width: 120px;
+    height: 120px;
+}
+.cricketFlourTopPics{
+   height: 225px;
+   padding-right: 20px;
+   padding-left: 60px;
+}
+.crickFlourMainTextLinks{
+    color: #F05529;
+}
+
+/* CONTACT */
+
+#contactPic{
+    background: url('./images/Baiobar_Website_Connect_Main Header Image.jpg') no-repeat center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 700px;
+    background-position-y: 1px;
+  
+    
+}
+#contactPage{
+    background-color: #4B4118;
+}
+
+/* ABOUT */
+
+#aboutWrapper1{
+    background: url('./images/about us main header.jpg') no-repeat center center ;
+  -webkit-background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        -o-background-size: 100% 100%;
+        background-size: 100% 100%;
+        height: 800px;
+}
+#aboutWrapper2{
+    background: linear-gradient(360deg, white 68%, #EAEAEB 32%);
+}
+.specialAboutContainer{
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.specialAboutContainer2{
+    margin-right: 300px;
+    margin-left: 200px
+}
+#aboutWrapper5{
+    background-color: #EAEAEB;
+}
+.aboutMiddlePicsSmall{
+    height: 230px;
+    width: 100%;
+}
+.aboutMiddlePicsLarge{
+    height: 500px;
+    width: 100%;
+}
+.whatsNextPic{
+    padding-left: 50px;
+    height: 450px
+}
+
+/* HOME */
+
+.baiobarWordsPic{
+    height: 80px;
+    width: 250px;
+}
+
+#homeWrapper1{
+    background: url('./images/baiobar home main header image_2.jpg') no-repeat ;
+    background-position: right bottom;
+    background-size: 70% 70% !important;
+    -webkit-background-size:   70% 70% !important;
+    -moz-background-size:   70% 70% !important;
+     -o-background-size:   70% 70% !important;
+     height: 650px; 
+}
+#homeWrapper1Inside{
+    background-color: #F05529;
+}
+
+#homeWrapper8{
+    background: linear-gradient(180deg, white 50%, #EAEAEB 50%);
+}
+#homeNewsletterdiv{
+    background-color: #F3CC35;
+}
+#homeWrapper5{
+    background-color: #EAEAEB;
+}
+#product1Div{
+    background-color: #F3CC35;
+}
+#productCards{
+    position: relative;
+}
+#homeProductBadge{
+    top: 0px;
+    right: 0px;
+    position: absolute;
+}
+.homeIcons{
+    width: 125px;
+    height: 125px;
+}
+.iconParas{
+    margin-left: -50px !important;
+    padding-right: 60px;
+}
+.newBadgeImage{
+    height: 50px;
+}
+.allButtons{
+    width: 290px;
+}
+.SubmitButtons{
+width: 190px;
+}
+.buyButtons{
+    width: 190px;
+}
+#homeSpacetaker{
+    background: url('./images/Mountain\ Image.jpg') no-repeat ;
+    background-position: center;
+    background-size: cover  !important;
+    -webkit-background-size:  cover !important;
+    -moz-background-size:  cover !important;
+     -o-background-size:   cover  !important;
+}
+.homePicSpecialContainer{
+    margin-bottom: 500px;
+}
+.ingredientLogoText{
+    width: 135px;
+    height: 45px;
+}
+.ingredientPics{    
+    height: 500px;
+    margin-top: -100px;
+}
+.ingredientPics2{    
+    height: 500px;
+    margin-top: -150px;
+}
+.ingredientPics3{    
+    height: 500px;
+    margin-top: -150px;
+}
+.newsLetterForm{
+    width: 350px;    
+}
+.newsLetterPic{
+    width: 13%
+}
+.inputNewsBody{
+    border-radius: 40px !important;
+}
+.uk-form-icon-flip~.uk-input{
+    padding-right: 60px !important
+}
+
+/* Instagram Component */
+.instagramPics{
+    width: 100%;
+    height: 200px;
+}
+
+
+/* SHOP */
+.shopspecialContainer{
+    margin-right: 50px;
+    margin-left: 50px;
+}
+#shopMainHeaderPic{
+    background: url('./images/Baiobar_Website_Shop_Main Header Image.jpg') no-repeat  center ;
+     -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size:  cover;
+        background-size: cover; 
+}
+.shopLifestyleImages{
+    height: 450px !important;
+    width: 90% !important;
+    padding: 20px;
+}
+
+
+
+/* shopping Cart */
+#checkoutWrapper2{
+    background-color: #EAEAEB;
+}
+.uk-checkbox{
+    background-color: white;
+    color: white;
+}
+#productPics{
+    width: 150px !important;
+    height: 150px !important;
+}
+#inShoppingCartPics{
+    width: 200px !important;
+    height: 200px !important;
+}
+
+
+/* PRODUCTSsHOP */
+#productWrapper2{
+    background-color: #EAEAEB;
+}
+.shopProductPics{
+   margin-top: 135px;
+}
+/* Footer */
+.footerLogo{
+    width: 75px;
+    height: 50px;
+}
+.footerPaymentPic{
+    width: 300px;
+}
+
+
+/* mobile */
+@media only screen and (max-width: 960px) { 
+    
+ 
+   .mobileShoppingCartChange{
+       padding-right: 10px !important;
+       padding-left: 10px !important;
+   }
+   #productPageLargeText{
+       font-size: 50px !important;
+   }
+   #BaioButton{
+       font-size: 10px !important;
+   }
+   #challengeQuo{
+       font-size: 20px !important;
+   }
+   #formLastName{
+       padding-left: 0px !important;
+   }
+  #emailInput{
+    padding-left: 0px !important;
+  }
+  .homeHeader1{
+      font-size: 70px !important;
+  }
+  .contactFormAdjust{
+    padding-left: 0px !important;
+
+  }
+  .contactMobileAdjust{
+      padding-top: 20px !important;
+  }
+  .challengeQuo1{
+      font-size: 18px !important;
+      padding-right: 0px !important;
+      margin-right: 0px !important; 
+  }
+  .workDamnit{
+      margin: none !important;
+      width: 30px;
+      height: 30px;
+      
+  }
+ 
+ .shoppingMobileMargin{
+     margin-top: 20px;
+ }
+ .productCardsMobile{
+ padding: 0px !important;
+ margin-left: 30px !important;
+ }
+
+ /* Instagram Component */
+.instagramPics{
+    height: 300px;
+}
+
+ /* ABOUT */
+ #aboutWrapper1{
+        height: 500px;
+        background-position: center !important;
+}
+ #aboutSecondPic{
+     width: 450px !important;
+     height: 350px !important;
+     padding-right: 20px !important;
+     padding-left: 20px !important;
+     background-color: white !important;
+ }
+ #aboutFirstPic{
+    border:0px solid #EAEAEB !important;
+    width: 450px !important;
+    height: 350px !important;
+ }
+ #aboutWrapper2{
+    background: linear-gradient(360deg, white 85%, #EAEAEB 15%);
+}
+.specialAboutContainer{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.specialAboutContainer2{
+    margin-right: 20px;
+    margin-left: 20px
+}
+.aboutInfoSection{
+    padding-right: 0px !important;
+}
+.aboutInfoSection2{
+    padding-left: 30px !important;
+}
+#AboutInfoDiv2{
+    padding: 0px !important;
+    background-color: white !important
+}
+.whatsNextPic{
+    padding-left: 0px;
+    width: 100%;
+    height: 300px;
+}
+.aboutMiddlePicsLarge{
+    height: 500px !important;
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+}
+.aboutMiddlePicsSmall{
+    height: 400px !important;
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+}
+
+
+/* SHOP PRODUCTS */
+.shopProductPics{
+    margin-top: 0px !important;
+ }
+
+ /* Shopping CART */
+ .CheckoutHeaders{
+     font-size: 25px;
+ }
+ #shoppingCartHeader{
+    font-size: 50px !important;
+    margin-top: 10px !important
+}
+
+/* SHOP MAIN */
+.productsImages{
+    /* height: 200px; */
+}
+.shopLifestyleImages{
+    height: 550px !important;
+    width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+
+
+/* PRODUCTS SECTION */
+.ingredientPics{    
+    height: 400px;
+    margin-top: 0px;
+}
+.ingredientPics2{    
+    height: 400px;
+    margin-top: 0px;
+}
+.ingredientPics3{    
+    height: 400px;
+    margin-top: 0px;
+}
+.shopPlaceHolderImages{
+    padding: 0px !important
+}
+.newsLetterForm{
+    width: 250px;    
+}
+.newsLetterPic{
+    width: 20%
+}
+
+/* CricketsFLourPage */
+.cricketFLourH4{
+    margin-left: 20px !important;
+  
+}
+.flourIcons{
+    width: 100px;
+    height: 100px;
+}
+.cricketFlourTopPics{
+    height: 350px;
+    padding-right: 0px;
+    padding-left: 0px;
+   
+ }
+
+/* HOME PAGE */
+.iconParas{
+    margin-left: 20px !important;
+    padding-right: 0px;
+}
+.homeIcons{
+    width: 100px;
+    height: 100px;
+}
+#homeWrapper1{
+    background: url('./images/baiobar home main header image_2.jpg') no-repeat ;
+    background-position: right bottom;
+    background-size: 80% 50% !important;
+    -webkit-background-size:   80% 50% !important;
+    -moz-background-size:   80% 50% !important;
+     -o-background-size:   80% 50% !important;
+     height: 650px; 
+}
+#homeSpacetaker{
+    background: url('./images/Mountain\ Image1.jpg') no-repeat center center ;
+    background-size: cover;
+}
+.homePicSpecialContainer{
+    margin-bottom: 650px;
+}
+.shopProductIngredientPics{
+    width: 350px;
+    height: 350px;
+}
+.ingredientPics{    
+    height: 400px !important;
+    margin-top: 0px;
+}
+.ingredientPics2{    
+    height: 400px !important;
+    margin-top: 0px;
+}
+.ingredientPics3{    
+    height: 400px !important;
+    margin-top: 0px;
+}
+
+}
+
+
+
+@media only screen and (max-width: 480px) { 
+    
+    /* About */
+    #aboutWrapper1{
+        height: 250px;
+        background-position: center !important;
+}
+    #aboutWrapper2{
+        background: linear-gradient(360deg, white 85%, #EAEAEB 15%);
+    }
+    .aboutStoryText{
+        font-size: 50px !important;
+    }
+    .aboutMiddlePicsLarge{
+        height: 350px !important;
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
+    .aboutMiddlePicsSmall{
+        height: 250px !important;
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
+    .whatsNextPic{
+        padding-left: 0px;
+        width: 100% !important;
+        height: 200px !important;
+    }
+    .baiobarWordsPic{
+        width: 150px;
+        height: 50px;
+    }
+    /* Instagram Component */
+    .instagramPics{
+        height: 275px;
+    }
+    
+   
+
+    /* HOME */
+    .homeHeader1{
+        font-size: 40px !important;
+    }
+    #homeWrapper1{
+        background: url('./images/baiobar home main header image_2.jpg') no-repeat ;
+        background-position: right bottom;
+        background-size: 100% 35% !important;
+        -webkit-background-size:   100% 35% !important;
+        -moz-background-size:  100% 35% !important;
+         -o-background-size:   100% 35% !important;
+         height: 650px; 
+    }
+    .instagramTextAllPages{
+        font-size: 15px;
+    }
+    .homeH4Copy{
+        padding-right: 0px !important;
+    }
+    #homeSpacetaker{
+        background: url('./images/Mountain\ Image1.jpg') no-repeat center center ;
+        background-size: cover;
+    }
+    .homePicSpecialContainer{
+        margin-bottom: 750px;
+    }
+    
+
+    /* ShopProducts */
+    #productPageLargeText{
+        font-size: 30px !important;
+    }
+    .shopProductIngredientPics{
+        width: 250px;
+        height: 250px;
+    }
+
+    /* Shopping CART */
+    #shoppingCartHeader{
+        font-size: 35px !important;
+        margin-top: 10px !important
+    }
+    .CheckoutHeaders{
+        font-size: 25px !important;
+    }
+    .divshoppingCartChange{
+        margin-right: 0px !important;
+        padding-right: 0px !important;
+        margin-left: 0px !important;
+        padding-left: 15px !important;
+    }
+
+
+    /* SHOP MAIN */
+    .productsImages{
+        /* height: 125px; */
+    }
+    .shopLifestyleImages{
+        height: 350px !important;
+        width: 100% !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+/* PRODUCTS SECTION */
+.ingredientPics{    
+    height: 325px !important;
+    margin-top: 0px;
+    width: 100%
+}
+.ingredientPics2{    
+    height: 325px !important;
+    margin-top: 0px;
+    width: 100%
+}
+.ingredientPics3{    
+    height: 325px !important;
+    margin-top: 0px;
+    width: 100%
+}
+
+/* cricket flour */
+.cricketFlourTopPics{
+    height: 150px;
+    padding-right: 0px;
+    padding-left: 0px;
+   
+ }
+
+}
+
+@media only screen and (max-width: 350px) {
+
+    /* Instagram Component */
+    .instagramPics{
+        height: 250px;
+    }
+
+    /* ingredients pics */
+    .ingredientPics{    
+        height: 250px !important;
+        margin-top: 0px;
+        width: 100%
+    }
+    .ingredientPics2{    
+        height: 250px !important;
+        margin-top: 0px;
+        width: 100%
+    }
+    .ingredientPics3{    
+        height: 250px !important;
+        margin-top: 0px;
+        width: 100%
+    }
+
+/* about */
+
+.whatsNextPic{
+    padding-left: 0px;
+    width: 100% !important;
+    height: 150px !important;
+}
+/* SHOP */
+.shopLifestyleImages{
+    height: 300px !important;
+    width: 100% !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+ }
+
