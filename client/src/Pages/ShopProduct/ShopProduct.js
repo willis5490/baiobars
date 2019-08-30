@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../../Components/Header/Header.js'
 import Button from '../../Components/BaioBarButton/BaioBarButton.js'
-
+import Products from '../../Components/Shopify/Products'
 
 
 class ShopProduct extends Component {
@@ -47,67 +47,11 @@ style3={
     return (
       <div>
         <Header {...this.props}></Header>
-
-        <div id='ProductsWrapper1'className='uk-margin-large-top'>
-            <div className='uk-container'>
-              <div uk-grid='true'>
-                <div className='uk-width-4-5@m  uk-width-1-1'>
-                  <div uk-grid='true'>
-                    <div className='uk-width-2-5@m uk-width-1-1 '>
-                      <img className='uk-align-center uk-align-left@m shopProductPics' src='../images/new product image2.jpg'></img>
-                    </div>
-                    <div className='uk-width-3-5@m '>
-                      <div  >
-                        <img   src='../images/new-icon.png'></img>
-                      </div>
-                      <h3><b>Baio bar flavor and <br></br> description</b></h3>
-                      <h3 style={{color:'red'}}><b>$99.99</b></h3>
-                      <p>Tom Lorent ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
-                      <div>
-                        <hr></hr>
-                        <p>View Product Specifications <span uk-icon="icon: triangle-down"></span></p>
-                        <hr></hr>
-                      </div>
-                      <div uk-grid='true'>
-                        <div className='uk-width-3-5'>
-                          <p>Specifics</p>
-                          <select
-                            value={this.state.packageSize}
-                            onChange={this.handleInputChange}
-                            name='packageSize'
-                          className="uk-select ContactInputBody">
-                            <option>{`Package Amount`}</option>
-                            <option>3</option>
-                            <option>6</option> 
-                            <option>12</option>           
-                            <span uk-icon="icon: chevron-down"></span>
-                          </select>
-                        </div>
-                        <div className='uk-width-2-5'>
-                          <p>Quantity</p>
-                          <input
-                          value={this.state.quantity}
-                          onChange={this.handleInputChange}
-                          name='quantity'
-                              className="uk-input ContactInputBody"
-                              type="text"
-                              placeholder="1" />
-                        </div>
-                      </div>
-                      <div className='uk-margin-medium-top'>
-                        <button onClick={this.sendEmail} 
-                          id="send-button" type="submit" 
-                          name="action" style={this.style1} 
-                          className=" uk-button uk-margin-auto uk-button-default uk-margin-large-bottom ">
-                          PLACE ORDER<a  style={this.style2} className='uk-margin-small-left uk-icon-button uk-icon-link' uk-icon="icon: play-circle; ratio: 2"></a>
-                        </button>
-                      </div>
-                    </div>
-                  </div>                 
-                </div>
-              </div>
-            </div>
-        </div>
+        <Products
+              products={this.props.store.products}
+              client={this.props.store.client}
+              addVariantToCart={this.props.addVariantToCart}
+            />
 
           <div id='productWrapper2'>
               <div className='uk-container'>

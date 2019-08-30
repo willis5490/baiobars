@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class Footer extends Component {
 style1={
@@ -37,7 +38,7 @@ style6={
           <div className='uk-container uk-margin-medium-top'>
             <div className='uk-visible@m' uk-grid='true'>
               <div className='uk-width-1-2@m uk-width-1-1 uk-align-center uk-margin-auto-vertical'>
-                <a href='/'><img className='footerLogo ' src='../images/Cricket-Logo_Header_BLK.png'></img></a>
+               <Link to='/'><a href='/'><img className='footerLogo ' src='../images/Cricket-Logo_Header_BLK.png'></img></a></Link>
               </div>
               <div className='uk-width-1-2@m uk-width-1-1  uk-margin-auto-vertical'>
                 <div className='uk-align-right@m uk-align-center'>

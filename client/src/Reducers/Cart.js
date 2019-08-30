@@ -36,7 +36,7 @@ export default (state = initState, action) => {
     case OPEN_CART:
       return {...state, isCartOpen: true}
     case CLOSE_CART:
-      return {...state, isCartOpen: false}
+      return window.location.reload();
     default:
       return state
   }

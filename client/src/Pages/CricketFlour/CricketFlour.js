@@ -4,6 +4,7 @@ import Button from '../../Components/BaioBarButton/BaioBarButton.js'
 import ContactForm from '../../Components/ContactForm/ContactForm.js'
 import BigHr from '../../Components/BigHR/BigHr.js'
 import Insta from '../../Components/Instagram/Instagram.js'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class Cricketflour extends Component {
 
@@ -63,10 +64,10 @@ class Cricketflour extends Component {
                       (nor our bars) bite! We'll leave that to you and the bar! 
                     </h4>
                     <h4>
-                    For more frequently asked questions, take a look at our <a href='/FAQ' className='crickFlourMainTextLinks'>FAQ </a>
+                    For more frequently asked questions, take a look at our <Link to='/FAQ'><a href='/FAQ' className='crickFlourMainTextLinks'>FAQ </a></Link>
                      where you can find out what so many others are already asking! If you
                       can't find the answers you're looking for there, you're more than
-                       welcome to <a href='/Contact' className='crickFlourMainTextLinks'>Contact Us </a> directly! 
+                       welcome to <Link to='/Contact'><a href='/Contact' className='crickFlourMainTextLinks'>Contact Us </a></Link> directly! 
                     </h4>
                 </div>
               </div>
@@ -186,7 +187,7 @@ class Cricketflour extends Component {
                 <div className='uk-width-1-1'>
                   <h1 className='uk-margin-large-top uk-margin-medium-bottom  uk-text-center'>SHORT FAQ SECTION</h1>
                   <div className='uk-align-center uk-text-center uk-margin-large-bottom'>
-                  <Button  Text={'Click here for FAQ section'} Href={'/FAQ'}></Button>
+                  <Link to='/FAQ'><Button  Text={'Click here for FAQ section'} Href={'/FAQ'}></Button></Link>
                   </div>
 
                 </div>

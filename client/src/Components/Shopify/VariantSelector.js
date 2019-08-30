@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 
 class VariantSelector extends Component {
   render() {
-    return (
+    return (                         
       <select
-        className="Product__option"
+        className="uk-select ContactInputBody"
         name={this.props.option.name}
         key={this.props.option.name}
         onChange={this.props.handleOptionChange}

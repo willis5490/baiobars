@@ -65,7 +65,12 @@ class ContactForm extends Component {
     });
   };
   notifyError = () => {
-    toast.error("You Must Fill Out All Forms !", {
+    toast.error("You Must Fill Out All Forms Correctly !", {
+      position: toast.POSITION.BOTTOM_CENTER
+    });
+  };
+  notifyError3 = () => {
+    toast.error("You Must Give A Valid Email !", {
       position: toast.POSITION.BOTTOM_CENTER
     });
   };
@@ -77,16 +82,16 @@ class ContactForm extends Component {
 
    sendEmail = event => {
     //  event.preventDefault()
-     if(this.state.name.val.length < 6){
+     if(this.state.name.val.length < 3){
        this.notifyError()
      }else if(/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/.test(this.state.email.val) == false){
+      this.notifyError3()
+     }else if(this.state.subject.val.length < 3){
       this.notifyError()
-     }else if(this.state.subject.val.length < 6){
-      this.notifyError()
-     }else if(this.state.message.val.length < 6){
+     }else if(this.state.message.val.length < 3){
       this.notifyError()
      }
-     else if(this.state.subject1.val.length < 6){
+     else if(this.state.subject1.val.length < 3){
       this.notifyError()
      }
      
@@ -163,7 +168,7 @@ class ContactForm extends Component {
                                 <input
                                 value={this.state.name.val}
                                 onChange={this.handleInputChange}
-                                style={this.state.name.val.length < 6 && this.state.name.touched==true ? this.stlyeInputBarBad : this.stlyeInputBarGood}
+                                style={this.state.name.val.length < 3 && this.state.name.touched==true ? this.stlyeInputBarBad : this.stlyeInputBarGood}
                                 name='name'
                                     className="uk-input ContactInputBody"
                                     type="text"
@@ -186,7 +191,7 @@ class ContactForm extends Component {
                                 <input
                                 value={this.state.subject.val}
                                 onChange={this.handleInputChange}
-                                style={this.state.subject.val.length < 6 && this.state.subject.touched==true ? this.stlyeInputBarBad : this.stlyeInputBarGood}
+                                style={this.state.subject.val.length < 3 && this.state.subject.touched==true ? this.stlyeInputBarBad : this.stlyeInputBarGood}
                                 name='subject'
                                     className="uk-input ContactInputBody"
                                     type="text"
@@ -196,7 +201,7 @@ class ContactForm extends Component {
                                   <input
                                   value={this.state.subject1.val}
                                   onChange={this.handleInputChange}
-                                  style={this.state.subject1.val.length < 6 && this.state.subject1.touched==true ? this.stlyeInputBarBad : this.stlyeInputBarGood}
+                                  style={this.state.subject1.val.length < 3 && this.state.subject1.touched==true ? this.stlyeInputBarBad : this.stlyeInputBarGood}
                                   name='subject1'
                                       className="uk-input ContactInputBody"
                                       type="text"
@@ -210,7 +215,7 @@ class ContactForm extends Component {
                                 <textarea
                                 value={this.state.message.val}
                                 onChange={this.handleInputChange}
-                                style={this.state.message.val.length < 6 && this.state.message.touched==true ? this.stlyeInputBarBad : this.stlyeInputBarGood}
+                                style={this.state.message.val.length < 3 && this.state.message.touched==true ? this.stlyeInputBarBad : this.stlyeInputBarGood}
                                 name='message'
                                 className="uk-textarea ContactInputBody"
                                 rows="5"

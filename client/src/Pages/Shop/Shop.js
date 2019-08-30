@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from '../../Components/Header/Header.js'
 import BaioButton from '../../Components/BaioBarButton/BaioBarButton.js'
 import Newsletter from '../../Components/Newsletter/Newsletter'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class Shop extends Component {
   homeCardStyle={
@@ -17,6 +18,7 @@ class Shop extends Component {
 
   // render nav
   render() {
+    console.log(this.props)
     return (
       <div>
         <Header {...this.props} shop={900} ></Header>
@@ -108,7 +110,7 @@ class Shop extends Component {
                 </div>
                 <img className='productsImages uk-align-center uk-margin-remove-bottom' src='../images/new product image_NEW.png'></img>
                 <br></br>
-                <a href='/ShoppingCart'><img className='buyButtons uk-margin-large-bottom uk-margin-remove-top uk-align-center' src='../images/but-now-button.png'></img></a>
+                <Link to='/ShopProduct'><a href='/ShopProduct'><img className='buyButtons uk-margin-large-bottom uk-margin-medium-top uk-align-center' src='../images/but-now-button.png'></img></a></Link>
               </div>
             </div>
           </div>

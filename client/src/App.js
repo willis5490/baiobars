@@ -10,13 +10,12 @@ import About from './Pages/About/About.js'
 import Contact from './Pages/Contact/Contact.js'
 import Cricketflour from './Pages/CricketFlour/CricketFlour.js'
 import FAQ from './Pages/FAQ/FAQ.js'
-import History from './Pages/History/History.js'
 import Home from './Pages/Home/Home.js'
 import Shop from './Pages/Shop/Shop.js'
 import ShoppingCart from './Pages/ShoppingCart/ShopingCart.js'
-import Shoppingcheckout from './Pages/ShoppingCheckout/ShoppingCheckout.js'
 import ShopProduct from './Pages/ShopProduct/ShopProduct.js'
 import NotFound from './Pages/NotFound/NotFound.js'
+import { createBrowserHistory } from 'history'
 
 
 
@@ -28,6 +27,11 @@ import store from './store';
 
 require("dotenv").config();
 
+const history = createBrowserHistory()
+
+history.listen(_ => {
+  window.scrollTo(0, 0)  
+})
 
 
 class App extends Component {
@@ -73,7 +77,7 @@ addVariantToCart(variantId, quantity) {
     const state = store.getState();
    
     return (
-      <Router  history={History}>
+      <Router  history={history}>
          <div className="App">
 
             <Switch>
@@ -104,11 +108,7 @@ addVariantToCart(variantId, quantity) {
               
               <Route exact path="/ShoppingCart" render={props =><ShoppingCart  store={state} updateQuantityInCart={this.updateQuantityInCart} 
               removeLineItemInCart={this.removeLineItemInCart} handleCartClose={this.handleCartClose} handleCartOpen={this.handleCartOpen}
-              addVariantToCart={this.addVariantToCart} />} />
-              
-              <Route exact path="/Shoppingcheckout" render={props =><Shoppingcheckout  store={state} updateQuantityInCart={this.updateQuantityInCart} 
-              removeLineItemInCart={this.removeLineItemInCart} handleCartClose={this.handleCartClose} handleCartOpen={this.handleCartOpen}
-              addVariantToCart={this.addVariantToCart} />} />
+              addVariantToCart={this.addVariantToCart} />} />            
               
               <Route exact path="/ShopProduct" render={props =><ShopProduct store={state}  updateQuantityInCart={this.updateQuantityInCart} 
               removeLineItemInCart={this.removeLineItemInCart} handleCartClose={this.handleCartClose} handleCartOpen={this.handleCartOpen}

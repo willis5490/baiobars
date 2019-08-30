@@ -30,10 +30,10 @@ StoryStyle2={
   // render nav
   render() {
     console.log(this.props)
+    
     return (
       <div>
-        <Header {...this.props} story={900}></Header>
-
+        <Header {...this.props} story={900}></Header>       
         <div id='aboutWrapper1'>
           <div className='uk-container'>
             <div uk-grid='true'>

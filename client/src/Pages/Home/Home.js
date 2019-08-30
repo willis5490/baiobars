@@ -3,7 +3,7 @@ import BigHr from '../../Components/BigHR/BigHr.js'
 import ContactForm from '../../Components/ContactForm/ContactForm.js'
 import HeaderHome from '../../Components/HeaderHome/HeaderHome.js'
 import Insta from '../../Components/Instagram/Instagram.js'
-
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
 
@@ -72,7 +72,7 @@ class Home extends Component {
 
   // render nav
   render() {
-console.log(this.props);
+console.log();
   
     return (
       <div>
@@ -87,7 +87,7 @@ console.log(this.props);
                 <h2 className='homeHeader1' style={this.headerStyle}>CRICKET <br></br> <span style={{ color: 'white' }}>PROTEIN BAR</span></h2>
                
                 <div className='uk-margin-xlarge-bottom uk-margin-medium-top'>
-                  <a href='/Shop'><img className='buyButtons' src='../images/but-now-button.png'></img></a>
+                  <Link to='/Shop'><a href='/Shop'><img className='buyButtons' src='../images/but-now-button.png'></img></a></Link>
                 </div>
               </div>
             </div>
@@ -235,7 +235,7 @@ console.log(this.props);
                 </div>
                 <img className='productsImages uk-align-center' src='../images/new product image_NEW.png'></img>
                 <br></br>
-                <a ><img className='buyButtons uk-margin-large-bottom uk-margin-medium-top uk-align-center' src='../images/but-now-button.png'></img></a>
+                <Link to='/ShopProduct'><a href='/ShopProduct'><img className='buyButtons uk-margin-large-bottom uk-margin-medium-top uk-align-center' src='../images/but-now-button.png'></img></a></Link>
               </div>
             </div>
           </div>
@@ -294,7 +294,7 @@ console.log(this.props);
                     </p>
               </div>
               <div className='uk-width-1-1 uk-margin-large-bottom'>
-                <a href='/OurStory'><img className='allButtons' src='../images/find-out-more-button.png'></img></a>
+                <Link to='/OurStory'  ><a href='/OurStory'><img className='allButtons' src='../images/find-out-more-button.png'></img></a></Link>
               </div>
             </div>
           </div>

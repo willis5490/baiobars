@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from '../../Components/Header/Header.js'
 import Products from '../../Components/Shopify/Products'
 import Cart from '../../Components/Shopify/Cart'
-import LineItem from '../../Components/Shopify/LineItem'
+
 
 class Shoppingcart extends Component {
   styleHeader = {
@@ -41,7 +41,7 @@ class Shoppingcart extends Component {
   }
   // render nav
   render() {
-
+    console.log(this.props)
     return (
       <div>
         <Header {...this.props} cart={900}></Header>
@@ -59,10 +59,10 @@ class Shoppingcart extends Component {
                 <p>Product</p>
               </div>
               <div className='uk-width-1-5@m uk-width-1-5'>
-                <p>QTY</p>
+                <p className='uk-text-center'>QTY</p>
               </div>
               <div className='uk-width-1-5@m uk-width-2-5'>
-                <p>Subtotal</p>
+                <p className=''>Subtotal</p>
               </div>
             </div>
             <div style={this.specialDiv} uk-grid='true' className='uk-margin-remove-top mobileShoppingCartChange'>
@@ -73,11 +73,7 @@ class Shoppingcart extends Component {
 
             {/* MAP USERS PURCHASES */}
 
-            <Products
-              products={this.props.store.products}
-              client={this.props.store.client}
-              addVariantToCart={this.props.addVariantToCart}
-            />
+           
 
             {/* <div style={this.specialDiv}  uk-grid='true' className='uk-margin-small-bottom mobileShoppingCartChange'>
               <div className='uk-width-1-5@m uk-width-2-5 '>
