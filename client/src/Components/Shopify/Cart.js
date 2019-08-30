@@ -50,7 +50,7 @@ class Cart extends Component {
       );
     });
     let emptyCartMessage = (
-      <h2 className='uk-text-center'>You have no items in your cart</h2>
+      <h2 id='emptyCartMessage' className='uk-text-center'>You have no items in your cart</h2>
     )
 
     return (

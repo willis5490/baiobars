@@ -54,15 +54,15 @@ class Shoppingcart extends Component {
                 <hr className='uk-margin-medium-bottom uk-margin-small-top' style={this.styleHR}></hr>
               </div>
             </div>
-            <div style={this.specialDiv} uk-grid='true' className='uk-margin-small-bottom mobileShoppingCartChange'>
+            <div  style={this.specialDiv} uk-grid='true' className='uk-margin-small-bottom mobileShoppingCartChange'>
               <div className='uk-width-3-5@m uk-width-2-5'>
-                <p>Product</p>
+                <p className='productMobileChange'>Product</p>
               </div>
               <div className='uk-width-1-5@m uk-width-1-5'>
-                <p className='uk-text-center'>QTY</p>
+                <p className='uk-text-center qtyMobileChange'>QTY</p>
               </div>
               <div className='uk-width-1-5@m uk-width-2-5'>
-                <p className=''>Subtotal</p>
+                <p className='subtotalMobileChange'>Subtotal</p>
               </div>
             </div>
             <div style={this.specialDiv} uk-grid='true' className='uk-margin-remove-top mobileShoppingCartChange'>
