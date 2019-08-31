@@ -9,8 +9,11 @@ p,h3,h4,h5,h6{
 
 /* TOASTIFY POP-UP */
 .Toastify__toast-container--bottom-center{
-        bottom: 22em !important;
-        
+        bottom: 22em !important;        
+    }
+    .Toastify__toast--default {
+        background: rgb(31, 124, 153) !important;
+        color: rgb(224, 238, 236) !important;
     }
 
 /* Shopify Components */
@@ -56,7 +59,7 @@ p,h3,h4,h5,h6{
     text-decoration: none;
 }
 .uk-offcanvas-content{
-    height:550px;
+    height:850px;
 }
 
 
@@ -332,7 +335,7 @@ width: 190px;
        margin-left: 83px !important;
    }
    .productMobileChange{
-       margin-left: 30px !important;
+       margin-left: 60px !important;
    }
    #productPageLargeText{
        font-size: 50px !important;
@@ -458,6 +461,9 @@ width: 190px;
 /* SHOP PRODUCTS */
 .shopProductPics{
     margin-top: 0px !important;
+        width: 80%;
+        height: 300px;
+    
  }
 
  /* Shopping CART */
@@ -570,12 +576,29 @@ width: 190px;
 @media only screen and (max-width: 480px) { 
    
    /* Shopify Components */
-   .qtyMobileChange{
-    margin-left: -15px !important;
+  
+.productMobileChange{
+    margin-left: 0px !important;
+}
+.qtyMobileChange{
+    margin-left: -10px !important;
 }
 .subtotalMobileChange{
     margin-left: 20px !important;
 }
+#inShoppingCartPics{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 65px;
+}
+.shopProductPics{
+    margin-top: 0px !important;
+        width: 100%;
+        height: 200px;
+    
+ }
 
     /* TOASTIFY POP-UP */
     .Toastify__toast-container--bottom-center{
@@ -716,6 +739,11 @@ width: 190px;
     padding-left: 0px;
    
  }
+ /* NAVBARMOBILE */
+.uk-offcanvas-content{
+    height:650px;
+}
+
 
 }
 
@@ -724,6 +752,26 @@ width: 190px;
     /* Instagram Component */
     .instagramPics{
         height: 250px;
+    }
+
+    /* SHOPIFY COMPONENTS */
+    .shopProductPics{
+        margin-top: 0px !important;
+            width: 100%;
+            height: 175px;        
+     }
+     .productMobileChange{
+        margin-left: 0px !important;
+    }
+    .qtyMobileChange{
+        margin-left: -10px !important;
+    }
+    #inShoppingCartPics{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 50px;
     }
 
     /* ingredients pics */
@@ -757,6 +805,11 @@ width: 190px;
     padding-left: 0px !important;
     padding-right: 0px !important;
 }
+/* NAVBARMOBILE */
+.uk-offcanvas-content{
+    height:550px;
+}
+
 
  }
 

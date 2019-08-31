@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import VariantSelector from './VariantSelector';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 class Product extends Component {
 
@@ -66,6 +68,7 @@ style2={
     });
   }
 
+  
   render() {
     let variantImage = this.state.selectedVariantImage || this.props.product.images[0]
     let variant = this.state.selectedVariant || this.props.product.variants[0]
@@ -79,6 +82,12 @@ style2={
         />
       );
     });
+    const notify = () => toast("Your Item Has Been Added To Your Cart!");
+    toast.configure({
+      position:"bottom-center",
+      autoClose: 2000,
+      
+    })
     return (
 <div>
     
@@ -113,7 +122,7 @@ style2={
                     </div>
                   </div>
                   <div className='uk-margin-medium-top'>
-                    <button style={this.style1}  onClick={() => this.props.addVariantToCart(variant.id, variantQuantity)}>
+                    <button style={this.style1}  onClick={() => {this.props.addVariantToCart(variant.id, variantQuantity); notify()} }>
                       ADD TO CART<a style={this.style2} className='uk-margin-small-left uk-icon-button uk-icon-link' uk-icon="icon: play-circle; ratio: 2"></a>
                     </button>
                   </div>
@@ -121,8 +130,8 @@ style2={
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </div>        
+      </div>      
       </div>
     );
   }

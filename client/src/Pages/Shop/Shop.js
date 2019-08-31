@@ -95,12 +95,12 @@ class Shop extends Component {
                   <div className='uk-width-1-4@s uk-width-1-2'>
                     <ul>
                       <li>Excellent source of protein</li>
-                      <li>We use simple ingredients </li>
+                      <li>Gluten Free</li>
                     </ul>
                   </div>
-                  <div className='uk-width-1-4@s uk-width-1-2 uk-margin-remove-bottom'>
-                    <ul>
-                      <li>Gluten Free</li>
+                  <div className='uk-width-1-4@s uk-width-1-2'>
+                    <ul>                      
+                      <li>We use simple ingredients </li>
                       <li>Satisfy your cravings</li>
                     </ul>
                   </div>
