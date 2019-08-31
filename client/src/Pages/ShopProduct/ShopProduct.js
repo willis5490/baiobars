@@ -45,7 +45,7 @@ style3={
   // render nav
   render() {
     return (
-      <div>
+      <div id='shopProductMain'>
         <Header {...this.props}></Header>
         <Products
               products={this.props.store.products}

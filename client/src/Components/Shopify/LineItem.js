@@ -57,7 +57,7 @@ class LineItem extends Component {
               </div>
             </div>
           </div>
-          <hr className='uk-align-center  uk-margin-remove-top' style={{borderTop: '1px solid', width:'50%'}}></hr>
+          <hr className='uk-align-center  uk-margin-remove-top' style={{borderTop: '1px solid', width:'70%'}}></hr>
         </div>
       </div>
     );
