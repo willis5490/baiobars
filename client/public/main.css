@@ -14,7 +14,7 @@ p,h3,h4,h5,h6{
     .Toastify__toast--default {
         background: rgb(31, 124, 153) !important;
         color: rgb(224, 238, 236) !important;
-        width: 100% !important ;
+        
     }
 
 /* Shopify Components */
@@ -616,6 +616,9 @@ width: 190px;
     .Toastify__toast-container--bottom-center{
         bottom: 19em !important;
         
+    }
+    .Toastify__toast--default {
+       width: 100% !important;
     }
         
     /* About */
