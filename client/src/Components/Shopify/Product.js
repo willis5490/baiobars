@@ -70,6 +70,8 @@ style2={
 
   
   render() {
+    console.log(this.state)
+    console.log(this.props)
     let variantImage = this.state.selectedVariantImage || this.props.product.images[0]
     let variant = this.state.selectedVariant || this.props.product.variants[0]
     let variantQuantity = this.state.selectedVariantQuantity || 1
@@ -82,10 +84,10 @@ style2={
         />
       );
     });
-    const notify = () => toast("Your Item Has Been Added To Your Cart!");
+    const notify = () => toast( this.props.product.title + "-" + this.state.selectedOptions.selection +" Has Been Added To Your Cart!");
     toast.configure({
       position:"bottom-center",
-      autoClose: 2000,
+      autoClose: 1600,
       
     })
     return (
