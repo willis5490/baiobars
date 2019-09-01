@@ -75,13 +75,13 @@ closeNavHandler = () => {
       <div>
           <div style={this.style1}  uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
             <nav id = 'header' style={this.style1} className="uk-navbar-container uk-margin" uk-navbar='true' uk-navbar="mode: click">
-                  <div style={{paddingLeft:'50px'}} className="uk-navbar-left uk-visible@l ">
+                  <div style={{paddingLeft:'50px'}} className="uk-navbar-left uk-visible@m ">
                       <ul className="uk-navbar-nav">
                           <li className=""><Link to='/'><span href = "/"><img id='logo-nav' src = "../images/Cricket-Logo_Header_WHT.png" alt=''></img></span></Link></li>
                           
                       </ul>
                   </div>
-                  <div className="uk-navbar-right uk-visible@l">
+                  <div className="uk-navbar-right uk-visible@m">
                       <ul id="middlenav" style={this.style1} className="uk-navbar-nav">
                           <li className={this.props.cricket}><Link to='Cricketflour'><span style={this.style1} href="/Cricketflour">CRICKET FLOUR,WAIT WHAT?</span></Link></li>
                           <li className={this.props.shop}><Link to="/Shop"><span style={this.style1} href="/Shop">SHOP</span></Link></li>
@@ -104,7 +104,7 @@ closeNavHandler = () => {
                   </div>
 
                   {/* mobile view */}
-                  <div  className="uk-hidden@l">
+                  <div  className="uk-hidden@m">
                   {this.state.isVisbile ? sideBar : sideBarButton}
                          
                   </div>
