@@ -619,7 +619,13 @@ width: 190px;
     }
     .Toastify__toast--default {
        width: 100% !important;
+       padding-right: 40px !important;
+       padding-left: 40px !important;
     }
+    .Toastify__toast-container--default {
+        width: 100% !important;
+     }
+       
         
     /* About */
     #aboutWrapper1{
