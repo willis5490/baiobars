@@ -68,7 +68,10 @@ p,h3,h4,h5,h6{
     text-decoration: none;
 }
 .uk-offcanvas-content{
-    height:850px;
+    /* height:850px; */
+}
+#mobileNarbar{
+    background-color: #EC2B2C;
 }
 
 
@@ -333,6 +336,9 @@ width: 190px;
 
 /* mobile */
 @media only screen and (max-width: 960px) { 
+    #mobileHeader{
+        width: 50% !important;
+    }
     /* shopify components */
     #cartShopify{
         padding-right: 0px !important;
@@ -580,12 +586,21 @@ width: 190px;
     height: 400px !important;
     margin-top: 0px;
 }
-
+ /* NAVBARMOBILE */
+ .uk-offcanvas-content{
+    height:850px;
+}
+#header{
+    width: 60%;
+}
 }
 
 
 
 @media only screen and (max-width: 480px) { 
+    #header{
+        width: 85%;
+    }
    
    /* Shopify Components */
   
@@ -769,6 +784,9 @@ width: 190px;
 }
 
 @media only screen and (max-width: 350px) {
+    #header{
+        width: 80%;
+    }
 
     /* Instagram Component */
     .instagramPics{

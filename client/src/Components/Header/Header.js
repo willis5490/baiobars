@@ -2,6 +2,30 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class Header extends Component {
+    constructor(props) {
+        super(props);
+    
+        this.setWrapperRef = this.setWrapperRef.bind(this);
+        this.handleClickOutside = this.handleClickOutside.bind(this);
+      }
+
+    //   get rid of menu if clicked outside its container
+      componentDidMount() {
+        document.addEventListener('mousedown', this.handleClickOutside);
+      }
+    
+      componentWillUnmount() {
+        document.removeEventListener('mousedown', this.handleClickOutside);
+      }
+    
+      setWrapperRef(node) {
+        this.wrapperRef = node;
+      }
+      handleClickOutside(event) {
+        if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
+          this.closeNavHandler()
+        }
+      }
     tempstyle={
         backgroundColor: 'white',
         color:'black',
@@ -56,12 +80,13 @@ class Header extends Component {
   render() {
 
     const sideBar = (
-        <div  className="uk-offcanvas-content">
+         //   ref for closing the navbar when clicking outside its container
+        <div ref={this.setWrapperRef}  className="uk-offcanvas-content">
                               <div style={this.style1}  >
                                   <div style={this.style1}  >
                                       <ul className="uk-nav uk-nav-default">
                                           <li className="uk-nav-header ">
-                                              <Link style={this.style1} onClick={this.closeNavHandler}  className="uk-offcanvas-close">X</Link>
+                                              <Link style={this.style1} onClick={this.closeNavHandler}  className="uk-offcanvas-close uk-hidden@s">X</Link>
                                               <li className={this.props.cart}>
                                                     <div id='cartContainerMobile'>
                                                         <p style={{color:'black'}} id='cartItemsNumberMobile'>{this.props.store.checkout.lineItems.length}</p>

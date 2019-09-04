@@ -1,10 +1,30 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 class HeaderHome extends Component {
+    constructor(props) {
+        super(props);
+    
+        this.setWrapperRef = this.setWrapperRef.bind(this);
+        this.handleClickOutside = this.handleClickOutside.bind(this);
+      }
 
-    componentDidMount() {
-
-    }
+    //   get rid of menu if clicked outside its container
+      componentDidMount() {
+        document.addEventListener('mousedown', this.handleClickOutside);
+      }
+    
+      componentWillUnmount() {
+        document.removeEventListener('mousedown', this.handleClickOutside);
+      }
+    
+      setWrapperRef(node) {
+        this.wrapperRef = node;
+      }
+      handleClickOutside(event) {
+        if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
+          this.closeNavHandler()
+        }
+      }    
 
   style1={
     backgroundColor: '#EC2B2C',
@@ -42,12 +62,13 @@ closeNavHandler = () => {
   // render nav
   render() {
       const sideBar = (
-        <div  className="uk-offcanvas-content">
+        //   ref for closing the navbar when clicking outside its container
+        <div  ref={this.setWrapperRef}  className="uk-offcanvas-content">
         <div style={this.style1}  >
             <div style={this.style1} >
                 <ul className="uk-nav uk-nav-default">
                     <li className="uk-nav-header">
-                        <a style={this.style1} onClick={this.closeNavHandler} className="uk-offcanvas-close" uk-close>X</a>
+                        <a style={this.style1} onClick={this.closeNavHandler} className="uk-offcanvas-close uk-hidden@s" uk-close>X</a>
                         <li className={this.props.cart}>
                               <div id='cartContainerMobile'>
                                   <p style={{color:'white'}} id='cartItemsNumberMobile'>{this.props.store.checkout.lineItems.length}</p>
@@ -72,7 +93,7 @@ closeNavHandler = () => {
         <Link onClick={this.openNavHandler}  id="mobileMenu" uk-icon="icon: menu; ratio: 2.5"></Link>
       )
     return (
-      <div>
+      <div style={{backgroundColor:'#EC2B2C'}}> 
           <div style={this.style1}  uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
             <nav id = 'header' style={this.style1} className="uk-navbar-container uk-margin" uk-navbar='true' uk-navbar="mode: click">
                   <div style={{paddingLeft:'50px'}} className="uk-navbar-left uk-visible@l ">
