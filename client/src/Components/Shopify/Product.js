@@ -187,7 +187,7 @@ class Product extends Component {
                         </div>
                       </div>
                       <div className='uk-margin-medium-top'>
-                        <button id='addToCartButton' style={this.style1} onClick={() => { this.props.addVariantToCart(variant.id, variantQuantity); notify(); this.closeModal() }}>
+                        <button id='addToCartButton' style={this.style1} onClick={() => { this.props.addVariantToCart(variant.id, variantQuantity); this.closeModal(); notify(); }}>
                           ADD TO CART<a style={this.style2} className='uk-margin-small-left uk-icon-button uk-icon-link' uk-icon="icon: play-circle; ratio: 2"></a>
                         </button>
                       </div>

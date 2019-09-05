@@ -63,7 +63,7 @@ class Cart extends Component {
             </ul>
           </div>
         </div>
-        <div className='uk-width-1-1 uk-align-auto-vertical'>
+        <div className='uk-width-1-1 uk-align-auto-vertical '>
           <div uk-grid='true'>
           <div className="uk-width-1-3@m uk-width-1-1">
               <div uk-grid='true'>
@@ -71,17 +71,17 @@ class Cart extends Component {
                 <div className="uk-width-2-5@m uk-width-1-1 ">
                   
                 </div>
-                <div className="uk-width-3-5@m uk-width-1-1 ">
-                  <p className="uk-margin-remove-bottom">Cart Total</p>
-                  <h2 className="uk-margin-remove-top">$ {this.props.checkout.totalPrice}</h2>
+                <div className="uk-width-3-5@m  uk-width-1-1 ">
+                  <p className="uk-margin-remove-bottom uk-text-right uk-text-left@m">Cart Total</p>
+                  <h2 className="uk-margin-remove-top uk-text-right uk-text-left@m">$ {this.props.checkout.totalPrice}</h2>
                 </div>
               </div>
             </div>
             <div className="uk-width-1-3@m uk-width-1-1 uk-flex-first@m">
-              <a id='shoppingCartClearButton' onClick={this.props.handleCartClose} class="uk-button uk-button-default ">clear shoppping cart</a>
+              <a id='shoppingCartClearButton' onClick={this.props.handleCartClose} class="uk-button uk-button-default uk-align-right uk-align-left@m">clear shoppping cart</a>
             </div>        
             <div className="uk-width-1-3@m uk-width-1-1 ">
-              <a  onClick={this.openCheckout} ><button style={this.style1} className="uk-button uk-margin-auto uk-margin-small-top uk-margin-small-bottom uk-button-default "><b>Place Order</b><a style={this.style2} className='uk-margin-small-left uk-icon-button uk-icon-link' uk-icon="icon: play-circle; ratio: 2"></a></button></a>
+              <a  onClick={this.openCheckout} ><button style={this.style1} className="uk-button uk-margin-auto uk-margin-small-top uk-margin-small-bottom uk-button-default  uk-align-right uk-align-left@m"><b>Place Order</b><a style={this.style2} className='uk-margin-small-left uk-icon-button uk-icon-link' uk-icon="icon: play-circle; ratio: 2"></a></button></a>
             </div>
 
           </div>
