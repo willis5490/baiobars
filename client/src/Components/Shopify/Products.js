@@ -15,8 +15,10 @@ class Products extends Component {
     });
 
     return (
-      <div>
-        {products}
+      <div className='uk-container' >
+        <div uk-grid='true'> 
+          {products}
+        </div>                     
       </div>
       
     );

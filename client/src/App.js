@@ -13,7 +13,6 @@ import FAQ from './Pages/FAQ/FAQ.js'
 import Home from './Pages/Home/Home.js'
 import Shop from './Pages/Shop/Shop.js'
 import ShoppingCart from './Pages/ShoppingCart/ShopingCart.js'
-import ShopProduct from './Pages/ShopProduct/ShopProduct.js'
 import NotFound from './Pages/NotFound/NotFound.js'
 import { createBrowserHistory } from 'history'
 
@@ -109,10 +108,7 @@ addVariantToCart(variantId, quantity) {
               <Route exact path="/ShoppingCart" render={props =><ShoppingCart  store={state} updateQuantityInCart={this.updateQuantityInCart} 
               removeLineItemInCart={this.removeLineItemInCart} handleCartClose={this.handleCartClose} handleCartOpen={this.handleCartOpen}
               addVariantToCart={this.addVariantToCart} />} />            
-              
-              <Route exact path="/ShopProduct" render={props =><ShopProduct store={state}  updateQuantityInCart={this.updateQuantityInCart} 
-              removeLineItemInCart={this.removeLineItemInCart} handleCartClose={this.handleCartClose} handleCartOpen={this.handleCartOpen}
-              addVariantToCart={this.addVariantToCart} />} />
+                           
               
               <Route render={props =><NotFound/>}/>
               

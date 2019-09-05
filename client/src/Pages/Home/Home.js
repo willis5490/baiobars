@@ -4,6 +4,7 @@ import ContactForm from '../../Components/ContactForm/ContactForm.js'
 import HeaderHome from '../../Components/HeaderHome/HeaderHome.js'
 import Insta from '../../Components/Instagram/Instagram.js'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Products from '../../Components/Shopify/Products'
 
 
 
@@ -78,8 +79,9 @@ console.log();
       <div>
         <HeaderHome {...this.props}></HeaderHome>
 
-        <div  id='homeWrapper1Inside'>
+        <div id='homeWrapper1Inside'>
           <div id='homeWrapper1'>
+          
           <div className='uk-container'>
             <div className='' uk-grid='true'>
               <div className='uk-width-1-1 '>
@@ -92,8 +94,9 @@ console.log();
               </div>
             </div>
           </div>
-          </div>`
-        </div>
+          </div>
+          </div>
+      
 
         <div id='homeSpacetaker'>
           <div id='homeWrapper2'>
@@ -206,39 +209,12 @@ console.log();
 
 
 
-        <div id='homeWrapper4' className='uk-margin-large-top'>
-          <div className='uk-container'>
-            <div className='' uk-grid='true'>
-              <div className='uk-width-1-1 '>
-                <img className='uk-align-center' style={{ marginBottom: '10px' }} src='../images/new-icon.png'></img>
-                <h2 className='uk-margin-remove-top uk-text-center' ><b>CHOCOLATE ALMOND</b></h2>
-                <hr style={{ width: '100px', borderTop: '3px solid' }} className='uk-align-center'></hr>
-                <div uk-grid='true ' >
-                  <div className='uk-width-1-4@s uk-width-1-2 uk-visible@s'>
-
-                  </div>
-                  <div className='uk-width-1-4@s uk-width-1-2'>
-                    <ul>
-                      <li>Excellent source of protein</li>
-                      <li>Gluten Free</li>
-                    </ul>
-                  </div>
-                  <div className='uk-width-1-4@s uk-width-1-2'>
-                    <ul>                      
-                      <li>We use simple ingredients </li>
-                      <li>Satisfy your cravings</li>
-                    </ul>
-                  </div>
-                  <div className='uk-width-1-4@s uk-width-1-2 uk-visible@s'>
-
-                  </div>
-                </div>
-                <img className='productsImages uk-align-center' src='../images/new product image_NEW.png'></img>
-                <br></br>
-                <Link to='/ShopProduct'><a href='/ShopProduct'><img className='buyButtons uk-margin-large-bottom uk-margin-medium-top uk-align-center' src='../images/but-now-button.png'></img></a></Link>
-              </div>
-            </div>
-          </div>
+        <div className='uk-margin-large-top uk-margin-large-bottom'>
+        <Products
+              products={this.props.store.products}
+              client={this.props.store.client}
+              addVariantToCart={this.props.addVariantToCart}
+            />
         </div>
 
         <div id='homeWrapper8' className='uk-margin-medium-top'>
@@ -246,7 +222,7 @@ console.log();
             <div className='' uk-grid='true'>
               <div className='uk-width-1-1 uk-align-center uk-text-center uk-margin-auto-vertical uk-margin-auto'>
                 <h1 className='uk-margin-medium-top'>JOIN OUR NEWSLETTER</h1>
-                <p>Subscripe to be the first to hear about our stuffies.</p>
+                <p>Subscribe to hear about our exlusive offers and latest arrivals.</p>
                 <div className='uk-align-center uk-text-center uk-margin-medium-bottom'>
                   <form>
                     <fieldset className="uk-fieldset  uk-align-center uk-text-center">

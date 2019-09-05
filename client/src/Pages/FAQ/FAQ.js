@@ -205,7 +205,7 @@ headerStyle={
             <div className='uk-container'>
               <div uk-grid='true'>
                 <div className='uk-width-1-1'>
-                  <h1 className='uk-margin-large-top uk-margin-xlarge-bottom  uk-text-center'>SHORT FAQ SECTION</h1>
+                  <h1 className='uk-margin-large-top uk-margin-large-bottom  uk-text-center'></h1>
                 </div>
               </div>
             </div>

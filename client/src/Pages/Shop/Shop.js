@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Header from '../../Components/Header/Header.js'
-import BaioButton from '../../Components/BaioBarButton/BaioBarButton.js'
 import Newsletter from '../../Components/Newsletter/Newsletter'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Products from '../../Components/Shopify/Products'
+
 
 class Shop extends Component {
   homeCardStyle={
@@ -81,39 +82,13 @@ class Shop extends Component {
           </div>
        </div> */}
 
-       <div id='homeWrapper4' className='uk-margin-large-top'>
-          <div className='uk-container'>
-            <div className='' uk-grid='true'>
-              <div className='uk-width-1-1 '>
-                <img className='uk-align-center' style={{ marginBottom: '10px' }} src='../images/new-icon.png'></img>
-                <h2 className='uk-margin-remove-top uk-text-center' ><b>CHOCOLATE ALMOND</b></h2>
-                <hr style={{ width: '100px', borderTop: '3px solid' }} className='uk-align-center'></hr>
-                <div uk-grid='true ' >
-                  <div className='uk-width-1-4@s uk-width-1-2 uk-visible@s'>
 
-                  </div>
-                  <div className='uk-width-1-4@s uk-width-1-2'>
-                    <ul>
-                      <li>Excellent source of protein</li>
-                      <li>Gluten Free</li>
-                    </ul>
-                  </div>
-                  <div className='uk-width-1-4@s uk-width-1-2'>
-                    <ul>                      
-                      <li>We use simple ingredients </li>
-                      <li>Satisfy your cravings</li>
-                    </ul>
-                  </div>
-                  <div className='uk-width-1-4@s uk-width-1-2 uk-visible@s'>
-
-                  </div>
-                </div>
-                <img className='productsImages uk-align-center uk-margin-remove-bottom' src='../images/new product image_NEW.png'></img>
-                <br></br>
-                <Link to='/ShopProduct'><a href='/ShopProduct'><img className='buyButtons uk-margin-large-bottom uk-margin-medium-top uk-align-center' src='../images/but-now-button.png'></img></a></Link>
-              </div>
-            </div>
-          </div>
+        <div className='uk-margin-medium-top  uk-margin-xlarge-bottom'>
+        <Products
+              products={this.props.store.products}
+              client={this.props.store.client}
+              addVariantToCart={this.props.addVariantToCart}
+            />
         </div>
 
        

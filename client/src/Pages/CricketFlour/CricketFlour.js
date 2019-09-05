@@ -185,7 +185,7 @@ class Cricketflour extends Component {
             <div className='uk-container'>
               <div uk-grid='true'>
                 <div className='uk-width-1-1'>
-                  <h1 className='uk-margin-large-top uk-margin-medium-bottom  uk-text-center'>SHORT FAQ SECTION</h1>
+                  <h1 className='uk-margin-large-top uk-margin-medium-bottom  uk-text-center'>Hop To More Facts</h1>
                   <div className='uk-align-center uk-text-center uk-margin-large-bottom'>
                   <Link to='/FAQ'><Button  Text={'Click here for FAQ section'} Href={'/FAQ'}></Button></Link>
                   </div>
