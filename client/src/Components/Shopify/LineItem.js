@@ -28,7 +28,7 @@ class LineItem extends Component {
             <div className="uk-align-center">
               {this.props.line_item.variant.image ? <img id='inShoppingCartPics' src={this.props.line_item.variant.image.src} alt={`${this.props.line_item.title} product shot`} /> : null}
               <div className='uk-hidden@m'>
-                <p className='uk-text-center uk-remove-margin-bottom'>{this.props.line_item.title} - {this.props.line_item.variant.title}</p>                
+                <p className='uk-text-center uk-remove-margin-bottom'>{this.props.line_item.title}</p>                
               </div>
             </div>          
           </div>

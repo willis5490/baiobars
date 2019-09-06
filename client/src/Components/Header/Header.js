@@ -39,6 +39,13 @@ class Header extends Component {
     marginRight: '15px',
     paddingTop: '3px'
   }
+  style9 = {
+    backgroundColor: 'white',
+    color: 'black',
+    fontSize: '20px',
+
+    paddingTop: '3px'
+  }
   style2 = {
     height: '30px',
     backgroundColor: 'black',
@@ -96,7 +103,7 @@ class Header extends Component {
               </li>
               <li style={{ backgroundColor: 'black' }} className="uk-nav-divider"></li>
               <li className=""><Link to="/" onClick={this.closeNavHandler}><span style={this.style1} href="/">HOME</span></Link></li>
-              <li className=""><Link to="/Cricketflour" onClick={this.closeNavHandler}><span style={this.style1} href="/Cricketflour">CRICKET FLOUR,</span></Link></li>
+              <li className=""><Link to="/Cricketflour" onClick={this.closeNavHandler}><span style={this.style1} href="/Cricketflour">CRICKET FLOUR</span></Link></li>
               <li className=""><Link to="/Shop" onClick={this.closeNavHandler}><a style={this.style1} href="/Shop">SHOP</a></Link></li>
               <li className=""><Link to="/OurStory" onClick={this.closeNavHandler}><a style={this.style1} href="/OurStory">OUR STORY</a></Link></li>
               <li className=""><Link to="/FAQ" onClick={this.closeNavHandler}><a style={this.style1} href="/FAQ">FAQ</a></Link></li>
@@ -114,8 +121,8 @@ class Header extends Component {
     console.log(this.props)
     return (
       <div>
-        <div style={this.style1} uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-          <nav id='header' style={this.style1} className="uk-navbar-container uk-margin" uk-navbar='true' uk-navbar="mode: click">
+        <div style={this.style9} uk-sticky="sel-target: .uk-navbar-container;  cls-active: uk-navbar-sticky">
+          <nav id='header' style={this.style1} className="uk-navbar-container " uk-navbar='true' uk-navbar="mode: click">
             <div style={{ paddingLeft: '50px' }} className="uk-navbar-left uk-visible@l ">
               <ul className="uk-navbar-nav">
                 <li className=""><Link to='/' ><img id='logo-nav' src="../images/Cricket-Logo_Header_BLK.png" alt=''></img></Link></li>
@@ -153,9 +160,9 @@ class Header extends Component {
 
 
           </nav>
-          <nav style={{ backgroundColor: 'black' }} class="uk-navbar-container " uk-navbar='true'>
+          <nav id="secondNAvBar" style={{ backgroundColor: 'black', width:'100%' }} class="uk-navbar-container " uk-navbar='true'>
             <div class="uk-navbar-center uk-margin-small-top uk-margin-small-bottom">
-              <h5 style={{ color: 'white' }} className='uk-text-center uk-margin-auto-vertical '>* FREE SHIPPING ON ORDERS OVER <span style={{ color: '#EC2B2C' }}>$60 *</span></h5>
+              <h5 style={{ color: 'white' }} className='uk-text-center uk-margin-auto-vertical secondBorderText'>* FREE SHIPPING ON ORDERS OVER <span style={{ color: '#EC2B2C' }}>$60 *</span></h5>
             </div>
           </nav>
         </div>

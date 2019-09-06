@@ -25,6 +25,12 @@ class HeaderHome extends Component {
       this.closeNavHandler()
     }
   }
+  style9 = {
+    backgroundColor: '#EC2B2C',
+    color: 'white',
+    fontSize: '20px',
+    paddingTop: '3px'
+  }
 
   style1 = {
     backgroundColor: '#EC2B2C',
@@ -95,8 +101,8 @@ class HeaderHome extends Component {
     return (
       <div>
         <div style={{ backgroundColor: '#EC2B2C' }}>
-          <div style={this.style1} uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-            <nav id='header' style={this.style1} className="uk-navbar-container uk-margin" uk-navbar='true' uk-navbar="mode: click">
+          <div style={this.style9} uk-sticky="sel-target: .uk-navbar-container;  cls-active: uk-navbar-sticky">
+            <nav id='header' style={this.style1} className="uk-navbar-container " uk-navbar='true' uk-navbar="mode: click">
               <div style={{ paddingLeft: '50px' }} className="uk-navbar-left uk-visible@l ">
                 <ul className="uk-navbar-nav">
                   <li className=""><Link to='/'><span href="/"><img id='logo-nav' src="../images/Cricket-Logo_Header_WHT.png" alt=''></img></span></Link></li>
@@ -132,7 +138,7 @@ class HeaderHome extends Component {
               </div>
 
             </nav>
-                <nav style={{backgroundColor:'black'}} class="uk-navbar-container " uk-navbar='true'>            
+                <nav style={{backgroundColor:'black', width:'100%'}} class="uk-navbar-container " uk-navbar='true'>            
                   <div class="uk-navbar-center uk-margin-small-top uk-margin-small-bottom">
                     <h5 style={{color:'white'}} className='uk-text-center uk-margin-auto-vertical '>* FREE SHIPPING ON ORDERS OVER <span style={{color:'#EC2B2C'}}>$60 *</span></h5>
                   </div>                  

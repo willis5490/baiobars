@@ -3,6 +3,9 @@ import VariantSelector from './VariantSelector';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Modal from 'react-modal';
+import Slide from '../../Components/ProductSlider/Slide'
+import RightArrow from '../../Components/ProductSlider/RightArrow'
+import LeftArrow from '../../Components/ProductSlider/LeftArrow'
 
 class Product extends Component {
 
@@ -37,7 +40,14 @@ class Product extends Component {
 
     this.state = {
       selectedOptions: defaultOptionValues,
-      modalIsOpen: null
+      modalIsOpen: null,
+      images: [
+        this.props.product.images.map(image =>{return image.src })
+       
+       
+      ],
+      currentIndex: 0,
+      translateValue: 0
     };
 
     this.handleOptionChange = this.handleOptionChange.bind(this);
@@ -45,6 +55,43 @@ class Product extends Component {
     // this.findImage = this.findImage.bind(this);
   }
 
+
+  // carousel Fucntion
+  goToPrevSlide = () => {
+    if (this.state.currentIndex === 0)
+      return;
+
+    this.setState(prevState => ({
+      currentIndex: prevState.currentIndex - 1,
+      translateValue: prevState.translateValue + this.slideWidth()
+    }))
+  }
+
+  goToNextSlide = () => {
+    // Exiting the method early if we are at the end of the images array.
+    // We also want to reset currentIndex and translateValue, so we return
+    // to the first image in the array.
+    if (this.state.currentIndex === this.state.images[0].length - 1) {
+      return this.setState({
+        currentIndex: 0,
+        translateValue: 0
+      })
+    }
+
+    // This will not run if we met the if condition above
+    this.setState(prevState => ({
+      currentIndex: prevState.currentIndex + 1,
+      translateValue: prevState.translateValue + -(this.slideWidth())
+    }));
+  }
+
+  slideWidth = () => {
+    return document.querySelector('.slide').clientWidth
+  }
+
+
+
+  // modal Functions
   openModal = (_id) => {
     this.setState({ modalIsOpen: _id });
   }
@@ -53,16 +100,9 @@ class Product extends Component {
     this.setState({ modalIsOpen: null });
   }
 
-  // findImage(images, variantId) {
-  //   const primary = images[0];
 
-  //   const image = images.filter(function (image) {
-  //     return image.variant_ids.includes(variantId);
-  //   })[0];
 
-  //   return (image || primary).src;
-  // }
-
+  // Shopify Functions
   handleOptionChange(event) {
     const target = event.target
     let selectedOptions = this.state.selectedOptions;
@@ -84,25 +124,9 @@ class Product extends Component {
 
 
   render() {
+console.log(this.state.images)
  
-    const popAndLock = (prodImage) => {
-
-
-      if (prodImage.length !== 1) {
-        prodImage.shift()
-        return prodImage;
-      }
-      else {
-        return prodImage;
-      }
-    }
-    let variantImage = this.props.product.images[this.props.product.images.length - 1] || this.props.product.images[0]
-    let variantFilter = popAndLock(this.props.product.images)
-    // let variantImages = this.state.selectedVariantImage || variantFilter.map((image)=>{
-    //   console.log(image)
-    //   return image
-    // })
-
+    let variantImage = this.props.product.images[this.props.product.images.length - 1] || this.props.product.images[0] 
     let variant = this.state.selectedVariant || this.props.product.variants[0]
     let variantQuantity = this.state.selectedVariantQuantity || 1
     let variantSelectors = this.props.product.options.map((option) => {
@@ -114,7 +138,7 @@ class Product extends Component {
         />
       );
     });
-    const notify = () => toast(this.props.product.title + "-" + this.state.selectedOptions.selection + " Has Been Added To Your Cart!");
+    const notify = () => toast(this.props.product.title + "-" + " Has Been Added To Your Cart!");
     toast.configure({
       position: "bottom-center",
       autoClose: 1600,
@@ -130,14 +154,39 @@ class Product extends Component {
       }
     }
 
+    let sliderWrapper = (
+     <div>
+        <LeftArrow
+      goToPrevSlide={this.goToPrevSlide}
+    />
+      <div className="slider">
+
+        <div className="slider-wrapper"
+          style={{
+            transform: `translateX(${this.state.translateValue}px)`,
+            transition: 'transform ease-out 0.45s'
+          }}>
+          {
+            this.state.images[0].map((image, i) => (
+              <Slide key={i} image={image} />
+            ))
+          }
+        </div>
+      </div>
+      <RightArrow
+      goToNextSlide={this.goToNextSlide}
+    />
+     </div>
+    )
+
     return (
       <div className='uk-width-1-3@m uk-margin-large-top shopProductsDivs uk-width-1-1'>
         <a onClick={() => this.openModal(this.props.key)} href='#'><img className='shopProductPics uk-align-center' src={variantImage.src} alt={`${this.props.product.title} product shot`} /> </a>
         <div uk-grid='true'>
-          <div className='uk-width-2-3'>
+          <div className='uk-width-2-3 productsTitleMobile'>
             <a onClick={() => this.openModal(this.props.key)} href='#'><h5><b>{this.props.product.title}</b></h5></a>
           </div>
-          <div className='uk-width-1-3'>
+          <div className='uk-width-1-3 productsPriceMobile'>
             <h5 className='uk-text-right'><b>{comingSoonPRice(this.props.product.variants[0].price)}</b></h5>
           </div>
         </div>
@@ -150,19 +199,20 @@ class Product extends Component {
           <div className='uk-margin-small-top '>
             <div className='uk-container'>
               <div uk-grid='true'>
-                <div className='uk-width-1-1 uk-text-right'>
-                  <a><h4 style={{color:'#EC2B2C'}} onClick={this.closeModal}>X</h4></a>
+                <div className='uk-width-1-1 uk-text-right uk-margin-remove-bottom'>
+                  <a><h4 style={{ color: '#EC2B2C' }} onClick={this.closeModal}>X</h4></a>
                 </div>
               </div>
             </div>
           </div>
-          <div id='ProductsWrapper1' className='uk-margin-medium-top uk-margin-large-bottom'>
+          <div id='ProductsWrapper1' className=' uk-margin-large-bottom'>
             <div className='uk-container'>
               <div uk-grid='true'>
                 <div className='uk-width-5-5@m  uk-width-1-1'>
                   <div uk-grid='true'>
                     <div className='uk-width-3-5@m uk-width-1-1 '>
-                      {this.props.product.images.length ? <img className='shopProductPicsModal' src={variantImage.src} alt={`${this.props.product.title} product shot`} /> : null}
+                      {/* {this.props.product.images.length ? <img className='shopProductPicsModal uk-align-center' src={variantImage.src} alt={`${this.props.product.title} product shot`} /> : null} */}
+                      {this.props.product.images.length ? sliderWrapper : null}
                     </div>
                     <div className='uk-width-2-5@m '>
                       <div  >
