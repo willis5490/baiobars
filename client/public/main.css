@@ -857,16 +857,29 @@ width: 190px;
     /* TOASTIFY POP-UP */
     .Toastify__toast-container--bottom-center{
         bottom: 19em !important;
-        
+        margin: auto !important;
+        padding-right: 10px !important;
     }
     .Toastify__toast--default {
-       width: 100% !important;
-       padding-right: 40px !important;
-       padding-left: 40px !important;
+       width: 80% !important;
+       margin: auto !important;
+       
+      
     }
     .Toastify__toast-container--default {
         width: 100% !important;
+        margin: auto !important;
      }
+     .Toastify__toast--success{
+        width: 80% !important;
+        margin: auto !important;
+     }    
+     .Toastify__toast-container--success{
+        width: 80% !important;
+        margin: auto !important;
+        padding-right: 10px !important;
+     }  
+     
        
         
     /* About */
@@ -875,7 +888,7 @@ width: 190px;
         background-position: center !important;
     }
     #aboutWrapper2{
-        background: linear-gradient(360deg, white 88.5%, #EAEAEB 11.5%);
+        background: linear-gradient(360deg, white 88%, #EAEAEB 12%);
     }
     .aboutStoryText{
         font-size: 50px !important;
@@ -1119,6 +1132,9 @@ width: 190px;
     padding-left: 0px;
     width: 100% !important;
     height: 150px !important;
+}
+#aboutWrapper2{
+    background: linear-gradient(360deg, white 88.5%, #EAEAEB 11.5%);
 }
 /* SHOP */
 .shopLifestyleImages{

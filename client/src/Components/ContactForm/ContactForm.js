@@ -229,7 +229,7 @@ class ContactForm extends Component {
                         </div>                      
                 </div>
             </div>
-            <ToastContainer position="bottom-center" autoClose={2000} />
+            <ToastContainer position="bottom-center" autoClose={5000} />
       </div>
       
     );
