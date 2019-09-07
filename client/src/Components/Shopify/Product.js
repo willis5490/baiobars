@@ -306,7 +306,7 @@ console.log(this.state.images)
                 <div className='uk-width-1-1'>
                   <h1 className='uk-margin-large-top uk-margin-medium-bottom  uk-text-center'>Hop To More Facts</h1>
                   <div className='uk-align-center uk-text-center uk-margin-large-bottom'>
-                  <Link to='/FAQ'><Button  Text={'Click Here'} Href={'/FAQ'}></Button></Link>
+                  <Link to='/FAQ'><Button  Text={'Click For Facts'} Href={'/FAQ'}></Button></Link>
                   </div>
 
                 </div>
