@@ -5,17 +5,20 @@ import HeaderHome from '../../Components/HeaderHome/HeaderHome.js'
 import Insta from '../../Components/Instagram/Instagram.js'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Products from '../../Components/Shopify/Products'
+import axios from 'axios'
+import { ToastContainer,toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
 class Home extends Component {
 
-  componentDidMount(){
-  //  this.props.store.getState()
-  
+  componentDidMount() {
+    //  this.props.store.getState()
+
   }
-  state={
-    userEmail:''
+  state = {
+    userEmail: ''
   }
 
 
@@ -29,9 +32,41 @@ class Home extends Component {
 
   emptyFields = () => {
     this.setState({
-      userEmail:''
+      userEmail: ''
     })
   }
+
+  sendNewsletter = () => {
+    if(/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/.test(this.state.userEmail) == false){
+      this.notifyError();
+    }else{
+      axios.post("https://baiobar.herokuapp.com/sendNewsletter", {
+        email: this.state.userEmail,
+      })
+        .then((response) => {
+          console.log(response)
+        })
+        .catch((err) => {
+          console.log(err)
+        })
+        this.notify()
+        this.emptyFields()
+    }
+
+    }
+   
+
+  notify = () => {
+    toast.success("You Are Now Subscribed To Our Newsletter !", {
+      position: toast.POSITION.BOTTOM_CENTER
+    });
+  };
+  notifyError = () => {
+    toast.error("You Must Give A Valid Email !", {
+      position: toast.POSITION.BOTTOM_CENTER
+    });
+  };
+
 
   headerStyle = {
     fontWeight: '1000',
@@ -73,30 +108,30 @@ class Home extends Component {
 
   // render nav
   render() {
-console.log();
-  
+    console.log();
+
     return (
       <div>
         <HeaderHome {...this.props}></HeaderHome>
 
         <div id='homeWrapper1Inside'>
           <div id='homeWrapper1'>
-          
-          <div className='uk-container'>
-            <div className='' uk-grid='true'>
-              <div className='uk-width-1-1 '>
-                <img className='baiobarWordsPic uk-margin-large-top' src='../images/Baiobar_Logo_Words_WHT.png'></img>
-                <h2 className='homeHeader1' style={this.headerStyle}>CRICKET <br></br> <span style={{ color: 'white' }}>PROTEIN BAR</span></h2>
-               
-                <div className='uk-margin-xlarge-bottom uk-margin-medium-top'>
-                  <Link to='/Shop'><a href='/Shop'><img className='buyButtons' src='../images/but-now-button.png'></img></a></Link>
+
+            <div className='uk-container'>
+              <div className='' uk-grid='true'>
+                <div className='uk-width-1-1 '>
+                  <img className='baiobarWordsPic uk-margin-large-top' src='../images/Baiobar_Logo_Words_WHT.png'></img>
+                  <h2 className='homeHeader1' style={this.headerStyle}>CRICKET <br></br> <span style={{ color: 'white' }}>PROTEIN BAR</span></h2>
+
+                  <div className='uk-margin-xlarge-bottom uk-margin-medium-top'>
+                    <Link to='/Shop'><a href='/Shop'><img className='buyButtons' src='../images/but-now-button.png'></img></a></Link>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          </div>
-          </div>
-      
+        </div>
+
 
         <div id='homeSpacetaker'>
           <div id='homeWrapper2'>
@@ -171,14 +206,14 @@ console.log();
               <div className='uk-width-1-2@m uk-width-1-1'>
                 <img className='ingredientLogoText' src='../images/Baiobar_Logo_Words_GRAY.png'></img>
                 <h1 className='uk-margin-remove-top'>Made with Organic Clover Honey</h1>
-              
+
               </div>
             </div>
             <div uk-grid='true'>
               <div className='uk-width-1-2@m uk-width-1-1 '>
                 <h1 className='uk-text-right uk-margin-remove-bottom'><img className='ingredientLogoText' src='../images/Baiobar_Logo_Words_GRAY.png'></img></h1>
                 <h1 className='uk-margin-remove-top uk-text-right'>Made with Organic Almond Butter</h1>
-                
+
               </div>
               <div className='uk-width-1-2@m uk-width-1-1 '>
                 <img className='uk-align-center ingredientPics3' style={{ marginTop: '' }} src='../images/Baiobar_Website Ingredients_Almond Butter_2.jpg'></img>
@@ -190,14 +225,14 @@ console.log();
               </div>
               <div className='uk-width-1-2@m uk-width-1-1'>
                 <img className='ingredientLogoText' src='../images/Baiobar_Logo_Words_GRAY.png'></img>
-                <h1 className='uk-margin-remove-top'>Made with Organic GF Oats</h1>               
+                <h1 className='uk-margin-remove-top'>Made with Organic GF Oats</h1>
               </div>
             </div>
             <div uk-grid='true'>
               <div className='uk-width-1-2@m uk-width-1-1 '>
                 <h1 className='uk-text-right uk-margin-remove-bottom'><img className='ingredientLogoText' src='../images/Baiobar_Logo_Words_GRAY.png'></img></h1>
                 <h1 className='uk-margin-remove-top uk-text-right'>Made With Organic Cocoa</h1>
-                
+
               </div>
               <div className='uk-width-1-2@m uk-width-1-1 '>
                 <img className='uk-align-center ingredientPics3' style={{ marginTop: '' }} src='../images/Baiobar_Website Ingredients_Cocoa_4.jpg'></img>
@@ -210,11 +245,11 @@ console.log();
 
 
         <div className='uk-margin-large-top uk-margin-large-bottom'>
-        <Products
-              products={this.props.store.products}
-              client={this.props.store.client}
-              addVariantToCart={this.props.addVariantToCart}
-            />
+          <Products
+            products={this.props.store.products}
+            client={this.props.store.client}
+            addVariantToCart={this.props.addVariantToCart}
+          />
         </div>
 
         <div id='homeWrapper8' className='uk-margin-medium-top'>
@@ -228,7 +263,7 @@ console.log();
                     <fieldset className="uk-fieldset  uk-align-center uk-text-center">
                       <div className="uk-form uk-align-center uk-text-center newsLetterForm">
                         <div id="emailInput" className="uk-inline  uk-width-1-1">
-                          <a class="uk-form-icon uk-form-icon-flip newsLetterPic" ><img src='../images/newsLetterbutton.png'></img></a>
+                          <a onClick={this.sendNewsletter} class="uk-form-icon uk-form-icon-flip newsLetterPic" ><img src='../images/newsLetterbutton.png'></img></a>
                           <input
                             value={this.state.userEmail}
                             onChange={this.handleInputChange}
@@ -242,10 +277,12 @@ console.log();
                   </form>
                 </div>
               </div>
-
+              
             </div>
           </div>
         </div>
+
+        <ToastContainer position="bottom-center" autoClose={2000} />
 
 
 

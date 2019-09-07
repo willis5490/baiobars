@@ -6,6 +6,9 @@ import Modal from 'react-modal';
 import Slide from '../../Components/ProductSlider/Slide'
 import RightArrow from '../../Components/ProductSlider/RightArrow'
 import LeftArrow from '../../Components/ProductSlider/LeftArrow'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Button from '../../Components/BaioBarButton/BaioBarButton.js'
+import Insta from '../../Components/Instagram/Instagram.js'
 
 class Product extends Component {
 
@@ -251,8 +254,8 @@ console.log(this.state.images)
           <div id='productWrapper2'>
             <div className='uk-container'>
               <div uk-grid='true'>
-                <div className='uk-width-1-2'>
-                  <div className='uk-section'>
+                <div className='uk-width-1-2@m uk-width-1-1'>
+                  <div className='modalProductDetailSect'>
                     <p style={{ color: 'black' }}>Details</p>
                     <p>
                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
@@ -265,8 +268,8 @@ console.log(this.state.images)
                     </p>
                   </div>
                 </div>
-                <div className='uk-width-1-2 '>
-                  <div className='uk-section'>
+                <div className='uk-width-1-2@m uk-width-1-1 '>
+                  <div className='modalProductDetailSect'>
                     <p style={{ color: 'black' }}>Specifications</p>
                     <ul>
                       <li>Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit</li>
@@ -286,13 +289,13 @@ console.log(this.state.images)
                   <h1 id='productPageLargeText' style={this.style3}>CHALLENGE THE <span style={{ color: 'red' }}>STATUS QUO</span></h1>
                 </div>
                 <div className='uk-width-1-3@m uk-width-1-2@s  uk-width-1-1'>
-                  <img style={{ width: '400px', height: '400px' }} className='uk-align-center shopProductIngredientPics' src="../images/ingredient-1.jpg" />
+                  <img  className='uk-align-center shopProductIngredientPics' src="..\images\Baiobar_Website_Our Story_Image_1.jpg" />
                 </div>
                 <div className='uk-width-1-3@m uk-width-1-2@s uk-width-1-1'>
-                  <img style={{ width: '400px', height: '400px' }} className='uk-align-center shopProductIngredientPics' src="../images/ingredient-2.jpg" />
+                  <img  className='uk-align-center shopProductIngredientPics' src="..\images\Baiobar_Website_Our Story_Image_1.jpg" />
                 </div>
-                <div className='uk-width-1-3@m uk-width-1-2@s uk-width-1-1'>
-                  <img style={{ width: '400px', height: '400px' }} className='uk-align-center shopProductIngredientPics' src="../images/ingredient-3.jpg" />
+                <div className='uk-width-1-3@m  uk-width-1-1'>
+                  <img  className='uk-align-center shopProductIngredientPics' src="..\images\Baiobar_Website_Our Story_Image_1.jpg" />
                 </div>
               </div>
             </div>
@@ -301,44 +304,17 @@ console.log(this.state.images)
             <div className='uk-container'>
               <div uk-grid='true'>
                 <div className='uk-width-1-1'>
-                  <h1 className='uk-margin-large-top uk-margin-medium-bottom  uk-text-center'>SHORT FAQ SECTION</h1>
+                  <h1 className='uk-margin-large-top uk-margin-medium-bottom  uk-text-center'>Hop To More Facts</h1>
                   <div className='uk-align-center uk-text-center uk-margin-large-bottom'>
+                  <Link to='/FAQ'><Button  Text={'Click Here'} Href={'/FAQ'}></Button></Link>
                   </div>
 
                 </div>
               </div>
             </div>
-          </div>
-          <div className='uk-margin-xlarge-bottom' id='flourWrapper6'>
-            <div id='instagramcontainer' className='uk-container'>
-              <div className='uk-margin-medium-top' uk-grid='true'>
-                <div className='uk-width-1-2@m uk-width-1-1'>
-                  <h2 className='uk-text-left@m uk-text-center instagramTextAllPages'>#CHALLENGETHESTATUSQUO</h2>
-                </div>
-                <div className='uk-width-1-2@m uk-width-1-1'>
-                  <a target="_blank" className='uk-align-right uk-visible@m' href='https://www.instagram.com/baiobarprotein/?hl=en'><span style={{ backgroundColor: 'red', color: 'white', margin: '5px' }} class="uk-icon-button " uk-icon="icon:instagram"></span></a>
-                  <a target="_blank" className='uk-align-center uk-margin-remove-top uk-text-center uk-hidden@m' href='https://www.instagram.com/baiobarprotein/?hl=en'><span style={{ backgroundColor: 'red', color: 'white', margin: '5px' }} class="uk-icon-button " uk-icon="icon:instagram"></span></a>
-                </div>
-              </div>
-              <div className='uk-grid-match' uk-grid='true'>
-                <div className='uk-width-1-5@m uk-width-1-1'>
-                  <img src='https://via.placeholder.com/200'></img>
-                </div>
-                <div className='uk-width-1-5@m uk-width-1-1'>
-                  <img src='https://via.placeholder.com/200'></img>
-                </div>
-                <div className='uk-width-1-5@m uk-width-1-1'>
-                  <img src='https://via.placeholder.com/200'></img>
-                </div>
-                <div className='uk-width-1-5@m uk-width-1-1'>
-                  <img src='https://via.placeholder.com/200'></img>
-                </div>
-                <div className='uk-width-1-5@m uk-width-1-1'>
-                  <img src='https://via.placeholder.com/200'></img>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div> 
+          
+        <Insta></Insta>
 
 
         </Modal>

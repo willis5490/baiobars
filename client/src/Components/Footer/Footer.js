@@ -77,14 +77,14 @@ style6={
 
             <div className='uk-hidden@m' uk-grid='true'>
               <div className='uk-width-1-1 uk-margin-auto-vertical uk-margin-auto '>          
-                <a href='/'><img className='footerLogo uk-align-center uk-margin-small-bottom' src='../images/Cricket-Logo_Header_BLK.png'></img></a>
+                <Link to='/'><img className='footerLogo uk-align-center uk-margin-small-bottom' src='../images/Cricket-Logo_Header_BLK.png'></img></Link>
               </div>
               <div className='uk-width-1-1 uk-margin-auto-vertical uk-text-center uk-margin-auto uk-margin-small-top'>
                   <div className=' uk-align-center footerIconWrpper '>
-                    <a href=''><span style={this.style2}  class="uk-icon-button footerIcons" uk-icon="icon:twitter"></span></a>
-                    <a href=''><span style={this.style2}  class="uk-icon-button footerIcons " uk-icon="icon:instagram"></span></a>
-                    <a href=''><span style={this.style2} class="uk-icon-button footerIcons" uk-icon="icon:facebook"></span></a> 
-                    <a href=''><span style={this.style2} class="uk-icon-button footerIcons" uk-icon="icon:youtube"></span></a> 
+                    <a  target='_blank' href=''><span style={this.style2}  class="uk-icon-button footerIcons" uk-icon="icon:twitter"></span></a>
+                    <a  target='_blank' href='https://www.instagram.com/baiobarprotein/'><span style={this.style2}  class="uk-icon-button footerIcons " uk-icon="icon:instagram"></span></a>
+                    <a  target='_blank' href=''><span style={this.style2} class="uk-icon-button footerIcons" uk-icon="icon:facebook"></span></a> 
+                    <a  target='_blank' href=''><span style={this.style2} class="uk-icon-button footerIcons" uk-icon="icon:youtube"></span></a> 
                   </div>
               </div>
               <div className='uk-width-1-1 uk-margin-remove-top'>

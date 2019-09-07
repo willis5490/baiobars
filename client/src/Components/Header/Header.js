@@ -138,10 +138,10 @@ class Header extends Component {
                 <li className={this.props.connect}><Link to="/Contact"><a style={{ backgroundColor: 'white', color: 'black', fontWeight: this.props.connect, fontSize: '20px', marginRight: '15px' }} href="/Contact">CONNECT</a></Link></li>
                 <hr className="uk-divider-vertical uk-margin-auto-vertical" style={this.style2}></hr>
                 <li className={this.props.cart}>
-                  <div id='cartContainer'>
-                    <p id='cartItemsNumber'>{this.props.store.checkout.lineItems.length}</p>
+                  <div className='cartContainer'>
+                    <p className='cartItemsNumber'>{this.props.store.checkout.lineItems.length}</p>
                   </div>
-                  <Link to="/ShoppingCart"><a id='cartPicture' style={{ backgroundColor: 'white', color: 'black', fontSize: '20px', fontWeight: this.props.cart }} href="/ShoppingCart"><i className="fas fa-2x fa-shopping-cart uk-margin-small-right"></i> CART</a></Link>
+                  <Link to="/ShoppingCart"><a className='cartPicture' style={{ backgroundColor: 'white', color: 'black', fontSize: '20px', fontWeight: this.props.cart }} href="/ShoppingCart"><i className="fas fa-2x fa-shopping-cart uk-margin-small-right"></i> CART</a></Link>
                 </li>
                 <hr className="uk-divider-vertical uk-margin-auto-vertical" style={this.style4}></hr>
                 <a target='_blank' href="" className="uk-icon-button uk-margin-auto-vertical" style={this.style3} uk-icon="twitter"></a>

@@ -65,7 +65,7 @@ StoryStyle2={
                     </p>
               </div>               
               <div  className='uk-width-1-4@m uk-width-1-1 aboutInfoSection'>
-                <div id='picsDiv1' style={{padding:'20px', backgroundColor:'#EAEAEB',  }}>
+                <div id='picsDiv2' style={{padding:'20px', backgroundColor:'#EAEAEB',  }}>
                 <img id='aboutFirstPic'  className='aboutPics uk-margin-xlarge-top uk-align-center' src="../images/Baiobar_Website_Our Story_John.jpg" />
                 </div>
                 <h2 id='aboutTitle' style={{color:'red'}}>JOHN<br></br> <span  style={{color:'grey'}}>Co-Founder</span></h2>
@@ -185,7 +185,7 @@ StoryStyle2={
               </div>
               
               <div className='uk-width-1-2@s uk-width-1-1'>
-                  <p className='uk-margin-medium-top uk-margin-xlarge-bottom'>
+                  <p className='uk-margin-medium-top uk-margin-xlarge-bottom aboutWhatsNextText1'>
                     The Baiø-Bar team is working to add to the portfolio, and we are excited to announce that 
                     in the near future, we will be adding single serve ready to mix stick protein powders along 
                     with a bulk 24oz tubs. The flavors we are working on currently are Chocolate and Vanilla. 
@@ -193,7 +193,7 @@ StoryStyle2={
                     a launch of 2020 but we will keep you updated through out the rest of the year.
                   </p>
               </div>
-              <div className='uk-width-1-2@s uk-width-1-1 uk-margin-xlarge-bottom'>
+              <div className='uk-width-1-2@s uk-width-1-1 uk-margin-xlarge-bottom aboutWhatsNextText2'>
                   <p className='uk-margin-medium-top '>
                     We are also going to be offering cricket powder on its own in 2020 and are working on 
                     creating a cookbook filled with recipes for utilizing crickets and getting the benefits 

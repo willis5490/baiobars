@@ -226,11 +226,12 @@ class ContactForm extends Component {
                         </form>
                         {/* <button onClick={this.sendEmail} id="send-button" type="submit" name="action" style={this.style1} className=" uk-button uk-margin-auto uk-button-default uk-margin-large-bottom ">SUBMIT<a  style={this.style2} className='uk-margin-small-left uk-icon-button uk-icon-link' uk-icon="icon: play-circle; ratio: 2"></a></button> */}
                         < a className='' onClick={this.sendEmail} type="submit" name="action"><img className='SubmitButtons uk-margin-small-top uk-margin-large-bottom' src='../images/submit-button.png'></img></a>
-                        </div>
-                        <ToastContainer position="bottom-center" autoClose={4000} />
+                        </div>                      
                 </div>
             </div>
+            <ToastContainer position="bottom-center" autoClose={2000} />
       </div>
+      
     );
   }
 }

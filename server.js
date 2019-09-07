@@ -52,9 +52,23 @@ app.post('/sendEmail', function(req, res) {
       html: Name + " has a message for you. The message says:   " + Message +".     respond to:  " + Email,
     };
     sgMail.send(msg);
-     
+  
+  });
 
-   
+  app.post('/sendNewsletter', function(req, res) {
+    console.log(req.body)
+    let Email = JSON.stringify(req.body.email)
+    
+    sgMail.setApiKey(process.env.REACT_APP_SENDGRID_KEY);
+    const msg = {
+      to: "william.stearns303@gmail.com",
+      from: "william.stearns303@gmail.com",
+      subject: 'Baio-Bar Newsletter Update',
+      text: Email,
+      html: Email + " Want To Subscribe To Your Newsletter",
+    };
+    sgMail.send(msg);
+  
   });
 
 

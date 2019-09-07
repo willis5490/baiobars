@@ -1,23 +1,57 @@
 import React, { Component } from 'react';
+import axios from 'axios'
+import { ToastContainer,toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 class Newsletter extends Component {
 
-    state={
-        userEmail:''
-      }
-    
-      handleInputChange = event => {
+    state = {
+        userEmail: ''
+    }
+
+    handleInputChange = event => {
         const { name, value } = event.target;
         this.setState({
-          [name]: value
+            [name]: value
+        });
+    };
+
+    emptyFields = () => {
+        this.setState({
+            userEmail: ''
+        })
+    }
+
+    sendNewsletter = () => {
+        if(/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/.test(this.state.userEmail) == false){
+          this.notifyError();
+        }else{
+          axios.post("https://baiobar.herokuapp.com/sendNewsletter", {
+            email: this.state.userEmail,
+          })
+            .then((response) => {
+              console.log(response)
+            })
+            .catch((err) => {
+              console.log(err)
+            })
+            this.notify()
+            this.emptyFields()
+        }
+    
+        }
+
+    notify = () => {
+        toast.success("You Are Now Subscribed To Our Newsletter !", {
+          position: toast.POSITION.BOTTOM_CENTER
         });
       };
-    
-      emptyFields = () => {
-        this.setState({
-          userEmail: ''
-        })
-      }
+
+      notifyError = () => {
+        toast.error("You Must Give A Valid Email !", {
+          position: toast.POSITION.BOTTOM_CENTER
+        });
+      };
 
     // render nav
     render() {
@@ -34,7 +68,7 @@ class Newsletter extends Component {
                                         <fieldset className="uk-fieldset  uk-align-center uk-text-center">
                                             <div className="uk-form uk-align-center uk-text-center newsLetterForm">
                                                 <div id="emailInput" className="uk-inline  uk-width-1-1">
-                                                    <a class="uk-form-icon uk-form-icon-flip newsLetterPic" ><img src='../images/newsLetterbutton.png'></img></a>
+                                                    <a onClick={this.sendNewsletter} class="uk-form-icon uk-form-icon-flip newsLetterPic" ><img src='../images/newsLetterbutton.png'></img></a>
                                                     <input
                                                         value={this.state.userEmail}
                                                         onChange={this.handleInputChange}
@@ -51,6 +85,7 @@ class Newsletter extends Component {
                         </div>
                     </div>
                 </div>
+                <ToastContainer position="bottom-center" autoClose={2000} />
 
             </div>
         );

@@ -29,7 +29,7 @@ class HeaderHome extends Component {
     backgroundColor: '#EC2B2C',
     color: 'white',
     fontSize: '20px',
-    paddingTop: '3px'
+    // paddingTop: '3px'
   }
 
   style1 = {
@@ -37,7 +37,7 @@ class HeaderHome extends Component {
     color: 'white',
     fontSize: '20px',
     marginRight: '15px',
-    paddingTop: '3px'
+    // paddingTop: '3px'
   }
   style2 = {
     height: '30px',
@@ -96,7 +96,7 @@ class HeaderHome extends Component {
       </div>
     )
     const sideBarButton = (
-      <Link onClick={this.openNavHandler} id="mobileMenu" uk-icon="icon: menu; ratio: 2.5"></Link>
+      <Link onClick={this.openNavHandler}  id="mobileMenu" uk-icon="icon: menu; ratio: 2.5"></Link>
     )
     return (
       <div>
@@ -118,10 +118,10 @@ class HeaderHome extends Component {
                   <li className={this.props.connect}><Link to="/Contact"><span style={this.style1} href="/Contact">CONNECT</span></Link></li>
                   <hr className="uk-divider-vertical uk-margin-auto-vertical" style={this.style2}></hr>
                   <li className={this.props.cart}>
-                    <div id='cartContainer'>
-                      <p style={{ color: 'white' }} id='cartItemsNumber'>{this.props.store.checkout.lineItems.length}</p>
+                    <div className='cartContainer'>
+                      <p style={{ color: 'white' }} className='cartItemsNumber'>{this.props.store.checkout.lineItems.length}</p>
                     </div>
-                    <Link to="/ShoppingCart"><span id='cartPicture' style={{ backgroundColor: '#EC2B2C', color: 'white', fontWeight: this.props.cart, fontSize: '20px' }} href="/ShoppingCart"><i className="fas fa-2x fa-shopping-cart uk-margin-small-right"></i> CART</span></Link>
+                    <Link to="/ShoppingCart"><span className='cartPicture' style={{ backgroundColor: '#EC2B2C', color: 'white', fontWeight: this.props.cart, fontSize: '20px' }} href="/ShoppingCart"><i className="fas fa-2x fa-shopping-cart uk-margin-small-right"></i> CART</span></Link>
                   </li>
                   <hr className="uk-divider-vertical uk-margin-small-right uk-margin-auto-vertical" style={this.style2}></hr>
                   <a target='_blank' href="" className="uk-icon-button uk-margin-auto-vertical" style={this.style3} uk-icon="twitter"></a>
