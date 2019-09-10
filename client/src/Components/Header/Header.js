@@ -83,6 +83,14 @@ class Header extends Component {
     })
   }
 
+  cartNumberHandler = (numberArray) => {
+    let totalItems = 0
+    for (var i = 0; i <numberArray.length; i++){
+      totalItems += numberArray[i].quantity      
+    }
+    return totalItems
+  }
+
   // render nav
   render() {
 
@@ -96,7 +104,7 @@ class Header extends Component {
                 <Link style={this.style1} onClick={this.closeNavHandler} className="uk-offcanvas-close uk-hidden@s">X</Link>
                 <li className={this.props.cart}>
                   <div id='cartContainerMobile'>
-                    <p style={{ color: 'black' }} id='cartItemsNumberMobile'>{this.props.store.checkout.lineItems.length}</p>
+                      <p style={{ color: 'black' }} id='cartItemsNumberMobile'>{this.cartNumberHandler(this.props.store.checkout.lineItems)}</p>
                   </div>
                   <Link to="/ShoppingCart" onClick={this.closeNavHandler}><span id='cartPicture' style={{ backgroundColor: 'white', color: 'black', fontSize: '20px', fontWeight: this.props.cart }} href="/ShoppingCart"><i className="fas fa-2x fa-shopping-cart uk-margin-small-right"></i> CART</span></Link>
                 </li>
@@ -139,7 +147,7 @@ class Header extends Component {
                 <hr className="uk-divider-vertical uk-margin-auto-vertical" style={this.style2}></hr>
                 <li className={this.props.cart}>
                   <div className='cartContainer'>
-                    <p className='cartItemsNumber'>{this.props.store.checkout.lineItems.length}</p>
+                    <p className='cartItemsNumber'>{this.cartNumberHandler(this.props.store.checkout.lineItems)}</p>
                   </div>
                   <Link to="/ShoppingCart"><a className='cartPicture' style={{ backgroundColor: 'white', color: 'black', fontSize: '20px', fontWeight: this.props.cart }} href="/ShoppingCart"><i className="fas fa-2x fa-shopping-cart uk-margin-small-right"></i> CART</a></Link>
                 </li>

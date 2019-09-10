@@ -45,9 +45,9 @@ class Product extends Component {
       selectedOptions: defaultOptionValues,
       modalIsOpen: null,
       images: [
-        this.props.product.images.map(image =>{return image.src })
-       
-       
+        this.props.product.images.map(image => { return image.src })
+
+
       ],
       currentIndex: 0,
       translateValue: 0
@@ -127,9 +127,9 @@ class Product extends Component {
 
 
   render() {
-console.log(this.state.images)
- 
-    let variantImage = this.props.product.images[this.props.product.images.length - 1] || this.props.product.images[0] 
+    console.log(this.state.images)
+
+    let variantImage = this.props.product.images[this.props.product.images.length - 1] || this.props.product.images[0]
     let variant = this.state.selectedVariant || this.props.product.variants[0]
     let variantQuantity = this.state.selectedVariantQuantity || 1
     let variantSelectors = this.props.product.options.map((option) => {
@@ -157,28 +157,53 @@ console.log(this.state.images)
     }
 
     let sliderWrapper = (
-     <div>
+      <div>
         <LeftArrow
-      goToPrevSlide={this.goToPrevSlide}
-    />
-      <div className="slider">
+          goToPrevSlide={this.goToPrevSlide}
+        />
+        <div className="slider">
 
-        <div className="slider-wrapper"
-          style={{
-            transform: `translateX(${this.state.translateValue}px)`,
-            transition: 'transform ease-out 0.45s'
-          }}>
-          {
-            this.state.images[0].map((image, i) => (
-              <Slide key={i} image={image} />
-            ))
-          }
+          <div className="slider-wrapper"
+            style={{
+              transform: `translateX(${this.state.translateValue}px)`,
+              transition: 'transform ease-out 0.45s'
+            }}>
+            {
+              this.state.images[0].map((image, i) => (
+                <Slide key={i} image={image} />
+              ))
+            }
+          </div>
+        </div>
+        <RightArrow
+          goToNextSlide={this.goToNextSlide}
+        />
+      </div>
+    )
+
+    let comingSoonItem = (
+      <div>
+        <div>
+          <hr></hr>
+          <p>View Product Specifications <span uk-icon="icon: triangle-down"></span></p>
+          <hr></hr>
+        </div>
+        <div uk-grid='true'>
+          <div className='uk-width-3-5'>
+            <p>Specifics</p>
+            {variantSelectors}
+          </div>
+          <div className='uk-width-2-5'>
+            <p>Quantity</p>
+            <input min="1" type="number" className="uk-input ContactInputBody" defaultValue={variantQuantity} onChange={this.handleQuantityChange}></input>
+          </div>
+        </div>
+        <div className='uk-margin-medium-top'>
+          <button id='addToCartButton' style={this.style1} onClick={() => { this.props.addVariantToCart(variant.id, variantQuantity); this.closeModal(); notify(); }}>
+            ADD TO CART<a style={this.style2} className='uk-margin-small-left uk-icon-button uk-icon-link' uk-icon="icon: play-circle; ratio: 2"></a>
+          </button>
         </div>
       </div>
-      <RightArrow
-      goToNextSlide={this.goToNextSlide}
-    />
-     </div>
     )
 
     return (
@@ -223,26 +248,7 @@ console.log(this.state.images)
                       <h3><b>{this.props.product.title}</b></h3>
                       <h3 style={{ color: '#EC2B2C' }}><b>${variant.price}</b></h3>
                       <p>{this.props.product.description}</p>
-                      <div>
-                        <hr></hr>
-                        <p>View Product Specifications <span uk-icon="icon: triangle-down"></span></p>
-                        <hr></hr>
-                      </div>
-                      <div uk-grid='true'>
-                        <div className='uk-width-3-5'>
-                          <p>Specifics</p>
-                          {variantSelectors}
-                        </div>
-                        <div className='uk-width-2-5'>
-                          <p>Quantity</p>
-                          <input min="1" type="number" className="uk-input ContactInputBody" defaultValue={variantQuantity} onChange={this.handleQuantityChange}></input>
-                        </div>
-                      </div>
-                      <div className='uk-margin-medium-top'>
-                        <button id='addToCartButton' style={this.style1} onClick={() => { this.props.addVariantToCart(variant.id, variantQuantity); this.closeModal(); notify(); }}>
-                          ADD TO CART<a style={this.style2} className='uk-margin-small-left uk-icon-button uk-icon-link' uk-icon="icon: play-circle; ratio: 2"></a>
-                        </button>
-                      </div>
+                      {this.props.product.images.length > 1 ? comingSoonItem: null}
 
                     </div>
                   </div>
@@ -288,13 +294,13 @@ console.log(this.state.images)
                   <h1 id='productPageLargeText' style={this.style3}>CHALLENGE THE <span style={{ color: 'red' }}>STATUS QUO</span></h1>
                 </div>
                 <div className='uk-width-1-3@m uk-width-1-2@s  uk-width-1-1'>
-                  <img  className='uk-align-center shopProductIngredientPics' src="..\images\Baiobar_Website_Our Story_Image_1.jpg" />
+                  <img className='uk-align-center shopProductIngredientPics' src="..\images\Baiobar_Website_Our Story_Image_1.jpg" />
                 </div>
                 <div className='uk-width-1-3@m uk-width-1-2@s uk-width-1-1'>
-                  <img  className='uk-align-center shopProductIngredientPics' src="..\images\Baiobar_Website_Our Story_Image_1.jpg" />
+                  <img className='uk-align-center shopProductIngredientPics' src="..\images\Baiobar_Website_Our Story_Image_1.jpg" />
                 </div>
                 <div className='uk-width-1-3@m  uk-width-1-1'>
-                  <img  className='uk-align-center shopProductIngredientPics' src="..\images\Baiobar_Website_Our Story_Image_1.jpg" />
+                  <img className='uk-align-center shopProductIngredientPics' src="..\images\Baiobar_Website_Our Story_Image_1.jpg" />
                 </div>
               </div>
             </div>
@@ -305,15 +311,15 @@ console.log(this.state.images)
                 <div className='uk-width-1-1'>
                   <h1 className='uk-margin-large-top uk-margin-medium-bottom  uk-text-center'>Hop To More Facts</h1>
                   <div className='uk-align-center uk-text-center uk-margin-large-bottom'>
-                  <Link to='/FAQ'><Button  Text={'Click For Facts'} Href={'/FAQ'}></Button></Link>
+                    <Link to='/FAQ'><Button Text={'Click For Facts'} Href={'/FAQ'}></Button></Link>
                   </div>
 
                 </div>
               </div>
             </div>
-        </div> 
-          
-        <Insta></Insta>
+          </div>
+
+          <Insta></Insta>
 
 
         </Modal>

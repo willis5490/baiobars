@@ -63,6 +63,13 @@ class HeaderHome extends Component {
       isVisbile: false
     })
   }
+  cartNumberHandler = (numberArray) => {
+    let totalItems = 0
+    for (var i = 0; i <numberArray.length; i++){
+      totalItems += numberArray[i].quantity      
+    }
+    return totalItems
+  }
 
 
   // render nav
@@ -77,7 +84,7 @@ class HeaderHome extends Component {
                 <a style={this.style1} onClick={this.closeNavHandler} className="uk-offcanvas-close uk-hidden@s" uk-close>X</a>
                 <li className={this.props.cart}>
                   <div id='cartContainerMobile'>
-                    <p style={{ color: 'white' }} id='cartItemsNumberMobile'>{this.props.store.checkout.lineItems.length}</p>
+                    <p style={{ color: 'white' }} id='cartItemsNumberMobile'>{this.cartNumberHandler(this.props.store.checkout.lineItems)}</p>
                   </div>
                   <Link to="/ShoppingCart" onClick={this.closeNavHandler}><span id='cartPicture' style={{ backgroundColor: '#EC2B2C', color: 'white', fontWeight: this.props.cart, fontSize: '20px' }} href="/ShoppingCart"><i className="fas fa-2x fa-shopping-cart uk-margin-small-right"></i> CART</span></Link>
                 </li>
@@ -119,7 +126,7 @@ class HeaderHome extends Component {
                   <hr className="uk-divider-vertical uk-margin-auto-vertical" style={this.style2}></hr>
                   <li className={this.props.cart}>
                     <div className='cartContainer'>
-                      <p style={{ color: 'white' }} className='cartItemsNumber'>{this.props.store.checkout.lineItems.length}</p>
+                      <p style={{ color: 'white' }} className='cartItemsNumber'>{this.cartNumberHandler(this.props.store.checkout.lineItems)}</p>
                     </div>
                     <Link to="/ShoppingCart"><span className='cartPicture' style={{ backgroundColor: '#EC2B2C', color: 'white', fontWeight: this.props.cart, fontSize: '20px' }} href="/ShoppingCart"><i className="fas fa-2x fa-shopping-cart uk-margin-small-right"></i> CART</span></Link>
                   </li>
