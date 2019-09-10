@@ -96,7 +96,7 @@ class ContactForm extends Component {
      }
      
      else {
-      axios.post("http://localhost:3001/sendEmail", {
+      axios.post("https://baiobar.herokuapp.com/sendEmail", {
         email: this.state.email.val,
          name: this.state.name.val,
          subject: this.state.subject.val,
