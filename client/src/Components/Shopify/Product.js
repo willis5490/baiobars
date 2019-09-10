@@ -144,8 +144,7 @@ console.log(this.state.images)
     const notify = () => toast(this.props.product.title + "-" + " Has Been Added To Your Cart!");
     toast.configure({
       position: "bottom-center",
-      autoClose: 4000,
-
+      autoClose: 3000,
     })
 
     const comingSoonPRice = (price) => {

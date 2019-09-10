@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-import { ToastContainer,toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
+
 
 class Newsletter extends Component {
 
@@ -85,7 +85,7 @@ class Newsletter extends Component {
                         </div>
                     </div>
                 </div>
-                <ToastContainer position="bottom-center" autoClose={2000} />
+               
 
             </div>
         );

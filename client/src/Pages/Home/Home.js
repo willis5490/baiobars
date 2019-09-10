@@ -6,8 +6,8 @@ import Insta from '../../Components/Instagram/Instagram.js'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Products from '../../Components/Shopify/Products'
 import axios from 'axios'
-import { ToastContainer,toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
+
 
 
 
@@ -282,7 +282,7 @@ class Home extends Component {
           </div>
         </div>
 
-        <ToastContainer position="bottom-center" autoClose={2000} />
+
 
 
 

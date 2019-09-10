@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Router, Switch } from "react-router-dom";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 // Components
 // import Header from './Components/Header/Header.js'
@@ -115,7 +117,7 @@ addVariantToCart(variantId, quantity) {
             </Switch>
           
         <Footer></Footer>
-       
+        <ToastContainer position="bottom-center" autoClose={1600} />
         </div>
       </Router>
   

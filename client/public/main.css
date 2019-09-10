@@ -97,12 +97,17 @@ p,h3,h4,h5,h6{
 .Toastify__toast-container--bottom-center{
         bottom: 22em !important;        
     }
-    .Toastify__toast--default {
-        background: rgb(31, 124, 153) !important;
-        color: rgb(224, 238, 236) !important;
-        
+.Toastify__toast--default {
+        background: black !important;
+        color: #EC2B2C !important;
+        font: bolder !important;
     }
 
+.Toastify__close-button--default{
+        color: #EC2B2C !important;
+    }
+
+    
 /* Shopify Components */
 
     .itemDeleter{
@@ -588,6 +593,9 @@ width: 190px;
     width: 450px !important;
     height: 350px !important;
  }
+ #picsDiv2{
+     padding: 0px !important;
+ }
  #aboutWrapper2{
     background: linear-gradient(360deg, white 85%, #EAEAEB 15%);
 }
@@ -597,7 +605,7 @@ width: 190px;
 }
 .specialAboutContainer2{
     margin-right: 20px;
-    margin-left: 20px
+    margin-left: 20px;
 }
 .aboutInfoSection{
     padding-right: 0px !important;

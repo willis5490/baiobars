@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-import { ToastContainer,toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
+
 
 
 class ContactForm extends Component {
@@ -80,23 +80,23 @@ class ContactForm extends Component {
     });
   };
 
-   sendEmail = event => {
-    //  event.preventDefault()
+   sendEmail = () => {
+    
      if(this.state.name.val.length < 3){
-       this.notifyError()
+       this.notifyError();
      }else if(/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/.test(this.state.email.val) == false){
-      this.notifyError3()
+      this.notifyError3();
      }else if(this.state.subject.val.length < 3){
-      this.notifyError()
+      this.notifyError();
      }else if(this.state.message.val.length < 3){
-      this.notifyError()
+      this.notifyError();
      }
      else if(this.state.subject1.val.length < 3){
-      this.notifyError()
+      this.notifyError();
      }
      
      else {
-      axios.post("https://baiobar.herokuapp.com/sendEmail", {
+      axios.post("http://localhost:3001/sendEmail", {
         email: this.state.email.val,
          name: this.state.name.val,
          subject: this.state.subject.val,
@@ -109,8 +109,8 @@ class ContactForm extends Component {
          .catch((err) => {
            console.log(err)
          })
-         this.notify()
-         this.emptyFields()
+         this.notify();
+         this.emptyFields();
          
      }
 
@@ -223,13 +223,11 @@ class ContactForm extends Component {
                                 </textarea>
                             </div>
                             </fieldset>
-                        </form>
-                        {/* <button onClick={this.sendEmail} id="send-button" type="submit" name="action" style={this.style1} className=" uk-button uk-margin-auto uk-button-default uk-margin-large-bottom ">SUBMIT<a  style={this.style2} className='uk-margin-small-left uk-icon-button uk-icon-link' uk-icon="icon: play-circle; ratio: 2"></a></button> */}
-                        < a className='' onClick={this.sendEmail} type="submit" name="action"><img className='SubmitButtons uk-margin-small-top uk-margin-large-bottom' src='../images/submit-button.png'></img></a>
+                        </form>                       
+                        < a className='' onClick={this.sendEmail} ><img className='SubmitButtons uk-margin-small-top uk-margin-large-bottom' src='../images/submit-button.png'></img></a>
                         </div>                      
                 </div>
-            </div>
-            <ToastContainer position="bottom-center" autoClose={5000} />
+            </div>            
       </div>
       
     );
