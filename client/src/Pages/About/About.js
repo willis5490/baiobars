@@ -51,7 +51,7 @@ StoryStyle2={
                 <div id='picsDiv1' style={{padding:'20px', backgroundColor:'#EAEAEB',  }}>
                 <img id='aboutFirstPic'  className='aboutPics uk-margin-xlarge-top uk-align-center' src="../images/Baiobar_Website_Our Story_Ariana.jpg" />
                 </div>
-                <h2 id='aboutTitle' style={{color:'red'}}>ARIANA GRANDE<br></br> <span  style={{color:'grey'}}>Co-Founder</span></h2>
+                <h2 id='aboutTitle' style={{color:'red'}}>ARIAN FRANGOS<br></br> <span  style={{color:'grey'}}>Co-Founder</span></h2>
                     <p>
                         Ariana has worked in the food industry since the age of 14, helping in her uncle’s pizza shop. She 
                         graduated with a double major in Dietetics and Food business and she has worked in the corporate food 
@@ -68,7 +68,7 @@ StoryStyle2={
                 <div id='picsDiv2' style={{padding:'20px', backgroundColor:'#EAEAEB',  }}>
                 <img id='aboutFirstPic'  className='aboutPics uk-margin-xlarge-top uk-align-center' src="../images/Baiobar_Website_Our Story_John.jpg" />
                 </div>
-                <h2 id='aboutTitle' style={{color:'red'}}>JOHN<br></br> <span  style={{color:'grey'}}>Co-Founder</span></h2>
+                <h2 id='aboutTitle' style={{color:'red'}}>JOHN FRANGOS<br></br> <span  style={{color:'grey'}}>Co-Founder</span></h2>
                     <p>
                         John is a co-founder and veteran of the United States Army and graduate 
                         from the Defense Language Institute. During his time in service, he has 
@@ -89,7 +89,7 @@ StoryStyle2={
               <div id='AboutInfoDiv2' style={{padding:'20px', backgroundColor:'#EAEAEB' }}>
                 <img id='aboutSecondPic'  className=' uk-margin-xlarge-top  uk-align-center' src="../images/Baiobar_Website_Our Story_Garrett.jpg" />             
                 </div>                
-                <h2 id='aboutTitle' style={{color:'red'}}>GARRET<br></br> <span  style={{color:'grey'}}>Chief Marketing Officer</span></h2>
+                <h2 id='aboutTitle' style={{color:'red'}}>GARRET HINCKLEY<br></br> <span  style={{color:'grey'}}>Chief Marketing Officer</span></h2>
                     <p>
                         Garret is an Army veteran and an advocate of fitness and nutrition. He is a 
                         NASM personal training certification as well as working on his bachelor’s in 
@@ -104,9 +104,9 @@ StoryStyle2={
               </div> 
               <div className='uk-width-1-4@m uk-width-1-1 aboutInfoSection2'>
               <div id='AboutInfoDiv2' style={{padding:'20px', backgroundColor:'#EAEAEB' }}>
-                <img id='aboutSecondPic'  className=' uk-margin-xlarge-top  uk-align-center' src="../images/Baiobar_Website_Our Story_Garrett.jpg" />             
+                <img id='aboutSecondPic'  className=' uk-margin-xlarge-top  uk-align-center' src="../images/Baiobar_Website_Our Story_Thomas.jpg" />             
                 </div>                
-                <h2 id='aboutTitle' style={{color:'red'}}>THOMAS ERNY<br></br> <span  style={{color:'grey'}}>Creative Director</span></h2>
+                <h2 id='aboutTitle' style={{color:'red'}}>THOMAS <br></br> ERNY<br></br> <span  style={{color:'grey'}}>Creative Director</span></h2>
                     <p>
                        
                        

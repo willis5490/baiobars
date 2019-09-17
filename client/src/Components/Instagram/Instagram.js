@@ -60,7 +60,7 @@ class Insta extends Component {
         <div className='uk-margin-large-bottom' id='flourWrapper6'>
         <div id='instagramcontainer' className='uk-container'>
           <div className='uk-margin-medium-top' uk-grid='true'>
-            <div className='uk-width-1-2@m uk-width-1-1'>
+            <div className='uk-width-1-2@m uk-width-1-1 uk-text-center'>
               <h2 className='uk-text-left@m uk-text-center instagramTextAllPages'>#CHALLENGETHESTATUSQUO</h2>
             </div>
             <div className='uk-width-1-2@m uk-width-1-1'>
@@ -81,7 +81,7 @@ class Insta extends Component {
             <div className='uk-width-1-5@m uk-width-1-2@s uk-width-1-1'>
               <img className='instagramPics' src={this.state.images[3]}></img>
             </div>
-            <div className='uk-width-1-5@m uk-width-1-2@s uk-width-1-1'>
+            <div className='uk-width-1-5@m  uk-width-1-1'>
               <img className='instagramPics' src={this.state.images[4]}></img>
             </div>
           </div>

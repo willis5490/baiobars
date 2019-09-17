@@ -259,7 +259,7 @@ class Product extends Component {
           <div id='productWrapper2'>
             <div className='uk-container'>
               <div uk-grid='true'>
-                <div className='uk-width-1-2@m uk-width-1-1'>
+                {/* <div className='uk-width-1-2@m uk-width-1-1'>
                   <div className='modalProductDetailSect'>
                     <p style={{ color: 'black' }}>Details</p>
                     <p>
@@ -272,16 +272,29 @@ class Product extends Component {
                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
                     </p>
                   </div>
-                </div>
+                </div> */}
                 <div className='uk-width-1-2@m uk-width-1-1 '>
                   <div className='modalProductDetailSect'>
                     <p style={{ color: 'black' }}>Specifications</p>
-                    <ul>
-                      <li>Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit</li>
-                      <li>Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit</li>
-                      <li>Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit</li>
-                      <li>Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit</li>
+                    <div uk-grid='true'>
+                      <div className='uk-width-1-2@m uk-width-1-1'>
+                      <ul>
+                      <li>Organic Oats</li>
+                      <li>Organic Almond Butter</li>
+                      <li>Organic Clover Honey</li>
+                      <li>Organic Dates</li>                     
                     </ul>
+
+                      </div>
+                      <div className='uk-width-1-2@m uk-width-1-1'>
+                      <ul>                     
+                      <li>Organic Cocoa</li>
+                      <li>Organic Coconut</li>
+                      <li>Sea Salt</li>
+                    </ul>
+
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -294,13 +307,13 @@ class Product extends Component {
                   <h1 id='productPageLargeText' style={this.style3}>CHALLENGE THE <span style={{ color: 'red' }}>STATUS QUO</span></h1>
                 </div>
                 <div className='uk-width-1-3@m uk-width-1-2@s  uk-width-1-1'>
-                  <img className='uk-align-center shopProductIngredientPics' src="..\images\Baiobar_Website_Our Story_Image_1.jpg" />
+                  <img className='uk-align-center shopProductIngredientPics'src="..\images\Product Page_Image 1.jpg" />
                 </div>
                 <div className='uk-width-1-3@m uk-width-1-2@s uk-width-1-1'>
-                  <img className='uk-align-center shopProductIngredientPics' src="..\images\Baiobar_Website_Our Story_Image_1.jpg" />
+                  <img className='uk-align-center shopProductIngredientPics'src="..\images\Product Page_Image 1.jpg" />
                 </div>
                 <div className='uk-width-1-3@m  uk-width-1-1'>
-                  <img className='uk-align-center shopProductIngredientPics' src="..\images\Baiobar_Website_Our Story_Image_1.jpg" />
+                  <img className='uk-align-center shopProductIngredientPics'src="..\images\Product Page_Image 1.jpg" />
                 </div>
               </div>
             </div>
