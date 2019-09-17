@@ -51,8 +51,8 @@ style6={
                     <br></br>
                     <div className='uk-margin-remove-bottom uk-align-right@m uk-align-center uk-visible@m' >
                     <ul class="uk-comment-meta uk-subnav uk-subnav-divider   uk-margin-remove-top bottomFooterInfo">
-                        <li style={this.style3} className='letterspaced '>1.234.567.8900</li>
-                        <li style={this.style3} className='letterspaced '>info@baiobar.com</li>
+                        <li style={this.style3} className='letterspaced '>877-872-5176</li>
+                        <li style={this.style3} className='letterspaced '>ariana.frangos@baiobar.com</li>
                     </ul>
                     </div>
                 </div>
@@ -89,12 +89,12 @@ style6={
               </div>
               <div className='uk-width-1-1 uk-margin-remove-top'>
                   <div className='uk-margin-small-top  uk-align-center uk-text-center '>
-                   <a className='uk-margin-remove-bottom' href="tel:000-602-0000">1.234.567.8900</a>
+                   <a className='uk-margin-remove-bottom' href="tel:877-872-5176">877-872-5176</a>
                   </div>
               </div>
               <div className='uk-width-1-1  uk-margin-remove-top uk-margin-remove-bottom'>
                   <div className='uk-margin-small-top uk-align-center uk-margin-remove-bottom uk-text-center '>
-                    <a className='uk-margin-remove-top  uk-margin-small-bottom'>info@baiobar.com</a>
+                    <a className='uk-margin-remove-top  uk-margin-small-bottom'>ariana.frangos@baiobar.com</a>
                   </div>
               </div>
               <hr style={this.style6} className=''></hr>
