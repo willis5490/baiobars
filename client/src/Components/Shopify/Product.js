@@ -74,7 +74,7 @@ class Product extends Component {
     // Exiting the method early if we are at the end of the images array.
     // We also want to reset currentIndex and translateValue, so we return
     // to the first image in the array.
-    if (this.state.currentIndex === this.state.images[0].length - 1) {
+    if (this.state.currentIndex === this.state.images[0].length - 2) {
       return this.setState({
         currentIndex: 0,
         translateValue: 0
@@ -277,7 +277,7 @@ class Product extends Component {
                   <div className='modalProductDetailSect'>
                     <p style={{ color: 'black' }}>Specifications</p>
                     <div uk-grid='true'>
-                      <div className='uk-width-1-2@m uk-width-1-1'>
+                      <div className='uk-width-1-2@m uk-width-1-1 uk-margin-remove-bottom'>
                       <ul>
                       <li>Organic Oats</li>
                       <li>Organic Almond Butter</li>
@@ -286,7 +286,7 @@ class Product extends Component {
                     </ul>
 
                       </div>
-                      <div className='uk-width-1-2@m uk-width-1-1'>
+                      <div className='uk-width-1-2@m uk-width-1-1 uk-margin-remove-top'>
                       <ul>                     
                       <li>Organic Cocoa</li>
                       <li>Organic Coconut</li>
@@ -306,15 +306,10 @@ class Product extends Component {
                 <div className='uk-width-1-1 uk-text-center uk-margin-large-top uk-margin-large-bottom'>
                   <h1 id='productPageLargeText' style={this.style3}>CHALLENGE THE <span style={{ color: 'red' }}>STATUS QUO</span></h1>
                 </div>
-                <div className='uk-width-1-3@m uk-width-1-2@s  uk-width-1-1'>
+                <div className=' uk-width-1-1'>
                   <img className='uk-align-center shopProductIngredientPics'src="..\images\Product Page_Image 1.jpg" />
                 </div>
-                <div className='uk-width-1-3@m uk-width-1-2@s uk-width-1-1'>
-                  <img className='uk-align-center shopProductIngredientPics'src="..\images\Product Page_Image 1.jpg" />
-                </div>
-                <div className='uk-width-1-3@m  uk-width-1-1'>
-                  <img className='uk-align-center shopProductIngredientPics'src="..\images\Product Page_Image 1.jpg" />
-                </div>
+                
               </div>
             </div>
           </div>

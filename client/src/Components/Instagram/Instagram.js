@@ -69,19 +69,19 @@ class Insta extends Component {
             </div>
           </div>
           <div className='uk-grid-match' uk-grid='true'>
-            <div className='uk-width-1-5@m uk-width-1-2@s uk-width-1-1'>
+            <div className='uk-width-1-5@m uk-width-1-3@s uk-width-1-2 '>
               <img className='instagramPics' src={this.state.images[0]}></img>
             </div>
-            <div className='uk-width-1-5@m uk-width-1-2@s uk-width-1-1'>
+            <div className='uk-width-1-5@m uk-width-1-3@s uk-width-1-2 '>
               <img className='instagramPics' src={this.state.images[1]}></img>
             </div>
-            <div className='uk-width-1-5@m uk-width-1-2@s uk-width-1-1'>
+            <div className='uk-width-1-5@m uk-width-1-3@s uk-width-1-2 '>
               <img className='instagramPics' src={this.state.images[2]}></img>
             </div>
-            <div className='uk-width-1-5@m uk-width-1-2@s uk-width-1-1'>
+            <div className='uk-width-1-5@m uk-width-1-2@s uk-width-1-2'>
               <img className='instagramPics' src={this.state.images[3]}></img>
             </div>
-            <div className='uk-width-1-5@m  uk-width-1-1'>
+            <div className='uk-width-1-5@m uk-width-1-2@s  uk-width-1-1'>
               <img className='instagramPics' src={this.state.images[4]}></img>
             </div>
           </div>

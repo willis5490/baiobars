@@ -138,7 +138,10 @@ p,h3,h4,h5,h6{
 
 #cartContainerMobile{
     position: relative;
-    height: 20px;
+    height: 20px;   
+}
+.mobileLinksNav{
+    padding-left: 10px !important;
 }
 #cartItemsNumberMobile{
     top: 0px;
@@ -388,11 +391,12 @@ width: 190px;
     margin-left: 50px;
 }
 #shopMainHeaderPic{
-    background: url('./images/Baiobar_Website_Shop_Main Header Image.jpg') no-repeat  center ;
-     -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size:  cover;
-        background-size: cover; 
+    background: url('./images/Baiobar_Website_Shop_Main Header Image.jpg') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    height: 800px;
 }
 .shopLifestyleImages{
     display: block;
@@ -432,8 +436,8 @@ width: 190px;
     background-color: #EAEAEB;
 }
 .shopProductPics{
-   width: 300px !important;
-   height: 200px !important;
+   width: 100% !important;
+   height: 60% !important;
 }
 
 .shopProductsDivs{
@@ -581,7 +585,7 @@ width: 190px;
 
  /* Instagram Component */
 .instagramPics{
-    width: 70%;
+    width: 100%;
         display: block;
         height: 100%;
 }
@@ -654,10 +658,14 @@ width: 190px;
 
 
 /* SHOP PRODUCTS */
+#shopMainHeaderPic{
+   
+    height:500px !important;
+}
 .shopProductPics{
     margin-top: 0px !important;
-        width: 80% !important;
-        height: 350px !important;
+        width: 70% !important;
+        height: 70% !important;
     
  }
  .shopProductsDivs{
@@ -748,13 +756,20 @@ width: 190px;
     height: 100px;
 }
 #homeWrapper1{
-    background: url('./images/baiobar home main header image_3.jpg') no-repeat ;
-    background-position: right bottom;
-    background-size: 80% 50% !important;
+    background: url('./images/baiobar home main header image_3.jpg') no-repeat center center ;
+    /* background-position: right bottom;
+    background-size: 100% 100% !important;
     -webkit-background-size:   80% 50% !important;
     -moz-background-size:   80% 50% !important;
      -o-background-size:   80% 50% !important;
-     height: 650px; 
+     height: 650px;  */
+     background-position: center ;
+     background-repeat: no-repeat;
+     background-size: cover;
+     -webkit-background-size:   cover;
+     -moz-background-size:  cover;
+      -o-background-size:  cover;
+     height: 650px;
 }
 #homeSpacetaker{
     background: url('./images/Mountain\ Image1.jpg') no-repeat center center ;
@@ -869,7 +884,7 @@ width: 190px;
 .shopProductPics{
     margin-top: 0px !important;
         width: 100% !important;
-        height: 200px !important;
+        height: 60% !important;
     
  }
  
@@ -964,13 +979,20 @@ width: 190px;
         font-size: 40px !important;
     }
     #homeWrapper1{
-        background: url('./images/baiobar home main header image_3.jpg') no-repeat ;
-        background-position: right bottom;
+        background: url('./images/baiobar home main header image_3.jpg') no-repeat  ;
+        /* background-position: right bottom;
         background-size: 100% 35% !important;
         -webkit-background-size:   100% 35% !important;
         -moz-background-size:  100% 35% !important;
          -o-background-size:   100% 35% !important;
-         height: 650px; 
+         height: 650px;  */
+         background-position: center ;
+         background-repeat: no-repeat;
+         background-size: cover;
+         -webkit-background-size:   cover;
+         -moz-background-size:  cover;
+          -o-background-size:  cover;
+         height: 650px;
     }
     .instagramTextAllPages{
         font-size: 15px;
@@ -988,6 +1010,10 @@ width: 190px;
     
 
     /* ShopProducts */
+    #shopMainHeaderPic{
+   
+        height:250px !important;
+    }
     #productPageLargeText{
         font-size: 30px !important;
     }

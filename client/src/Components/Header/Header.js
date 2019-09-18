@@ -100,9 +100,9 @@ class Header extends Component {
         <div style={this.style1}  >
           <div style={this.style1}  >
             <ul className="uk-nav uk-nav-default">
-              <li className="uk-nav-header ">
+              <li className="uk-nav-header mobileLinksNav">
                 <Link style={this.style1} onClick={this.closeNavHandler} className="uk-offcanvas-close uk-hidden@s">X</Link>
-                <li className={this.props.cart}>
+                <li  className={this.props.cart}>
                   <div id='cartContainerMobile'>
                       <p style={{ color: 'black' }} id='cartItemsNumberMobile'>{this.cartNumberHandler(this.props.store.checkout.lineItems)}</p>
                   </div>
@@ -110,12 +110,12 @@ class Header extends Component {
                 </li>
               </li>
               <li style={{ backgroundColor: 'black' }} className="uk-nav-divider"></li>
-              <li className=""><Link to="/" onClick={this.closeNavHandler}><span style={this.style1} href="/">HOME</span></Link></li>
-              <li className=""><Link to="/Cricketflour" onClick={this.closeNavHandler}><span style={this.style1} href="/Cricketflour">CRICKET FLOUR</span></Link></li>
-              <li className=""><Link to="/Shop" onClick={this.closeNavHandler}><a style={this.style1} href="/Shop">SHOP</a></Link></li>
-              <li className=""><Link to="/OurStory" onClick={this.closeNavHandler}><a style={this.style1} href="/OurStory">OUR STORY</a></Link></li>
-              <li className=""><Link to="/FAQ" onClick={this.closeNavHandler}><a style={this.style1} href="/FAQ">FAQ</a></Link></li>
-              <li className=""><Link to="/Contact" onClick={this.closeNavHandler}><a style={this.style1} href="/Contact">CONNECT</a></Link></li>          
+              <li className="mobileLinksNav"><Link to="/" onClick={this.closeNavHandler}><span style={this.style1} href="/">HOME</span></Link></li>
+              <li className="mobileLinksNav"><Link to="/Cricketflour" onClick={this.closeNavHandler}><span style={this.style1} href="/Cricketflour">CRICKET FLOUR</span></Link></li>
+              <li className="mobileLinksNav"><Link to="/Shop" onClick={this.closeNavHandler}><a style={this.style1} href="/Shop">SHOP</a></Link></li>
+              <li className="mobileLinksNav"><Link to="/OurStory" onClick={this.closeNavHandler}><a style={this.style1} href="/OurStory">OUR STORY</a></Link></li>
+              <li className="mobileLinksNav"><Link to="/FAQ" onClick={this.closeNavHandler}><a style={this.style1} href="/FAQ">FAQ</a></Link></li>
+              <li className="mobileLinksNav"><Link to="/Contact" onClick={this.closeNavHandler}><a style={this.style1} href="/Contact">CONNECT</a></Link></li>          
 
             </ul>
           </div>
