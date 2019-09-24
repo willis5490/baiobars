@@ -747,6 +747,23 @@ width: 190px;
  }
 
 /* HOME PAGE */
+#mobileGirlPicChange{
+    background: url('./images/baiobar girl mountains_mobile.jpg') no-repeat center center  !important ;
+    background-position: center;
+    background-size: 100% 100%  !important;
+    -webkit-background-size:  100% 100%  !important;
+    -moz-background-size:  100% 100%  !important;
+     -o-background-size:   100% 100%   !important;   
+     height: 800px;
+}
+#upwardDownPic{
+    background: url('./images/baiobar girl mountains_mobile2.jpg') no-repeat center center  !important ;
+    background-position: center;
+    background-size: 100% 100%  !important;
+    -webkit-background-size:  100% 100%  !important;
+    -moz-background-size:  100% 100%  !important;
+     -o-background-size:   100% 100%   !important;  
+}
 #homeSpacetaker{
     background: url('./images/baiobar girl mountains_mobile.jpg') no-repeat center center  !important ;
     background-position: center;
@@ -980,24 +997,33 @@ width: 190px;
    
 
     /* HOME */
+    #mobileGirlPicChange{
+        background: url('./images/baiobar girl mountains_mobile.jpg') no-repeat center center  !important ;
+        background-position: center;
+        background-size: 100% 100%  !important;
+        -webkit-background-size:  100% 100%  !important;
+        -moz-background-size:  100% 100%  !important;
+         -o-background-size:   100% 100%   !important;   
+         height: 650px;
+    }
     .homeHeader1{
         font-size: 40px !important;
     }
     #homeWrapper1{
         background: url('./images/baiobar home main header image_mobile.jpg') no-repeat  ;
-        /* background-position: center;
-        background-size: 100% 100% !important;
-        -webkit-background-size:   100% 100% !important;
-        -moz-background-size:  100% 100% !important;
-         -o-background-size:   100% 100% !important;
-         height: 650px;  */
-         background-position: center ;
+        background-position: right bottom;
+        background-size: 85% 85% !important;
+        -webkit-background-size:   85% 85% !important;
+        -moz-background-size:  85% 85% !important;
+         -o-background-size:   85% 85% !important;
+         height: 550px; 
+         /* background-position: center ;
          background-repeat: no-repeat;
          background-size: cover;
          -webkit-background-size:   cover;
          -moz-background-size:  cover;
           -o-background-size:  cover;
-         height: 550px;
+         height: 550px; */
     }
     .instagramTextAllPages{
         font-size: 15px;

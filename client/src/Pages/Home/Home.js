@@ -37,9 +37,9 @@ class Home extends Component {
   }
 
   sendNewsletter = () => {
-    if(/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/.test(this.state.userEmail) == false){
+    if (/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/.test(this.state.userEmail) == false) {
       this.notifyError();
-    }else{
+    } else {
       axios.post("https://baiobar.herokuapp.com/sendNewsletter", {
         email: this.state.userEmail,
       })
@@ -49,12 +49,12 @@ class Home extends Component {
         .catch((err) => {
           console.log(err)
         })
-        this.notify()
-        this.emptyFields()
+      this.notify()
+      this.emptyFields()
     }
 
-    }
-   
+  }
+
 
   notify = () => {
     toast.success("You Are Now Subscribed To Our Newsletter !", {
@@ -133,7 +133,77 @@ class Home extends Component {
         </div>
 
 
-        <div id='homeSpacetaker'>
+        <div id='homeSpacetakerMobile' className='uk-hidden@m'>
+          <div id='homeWrapper2'>
+            <div id='upwardDownPic'>
+              <div className='uk-container '>
+                <div className='' uk-grid='true'>
+                  <div className='uk-width-1-2@m uk-width-1-1 uk-margin-large-top '>
+                    <div className='' uk-grid="true">
+                      <div className='uk-width-1-3@m uk-width-1-1 '>
+                        <img className='uk-align-center uk-margin-auto-vertical homeIcons' src='../images/icon-1.png'></img>
+                      </div>
+                      <div className='uk-width-2-3@m uk-width-1-1 uk-margin-auto-vertical '>
+                        <h4 className='uk-margin-small-top iconParas'>
+                          Crickets contain essential Vitamin and Minerals Iron and Vitamin B12
+                          </h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='uk-width-1-2@m uk-width-1-1 uk-margin-large-top '>
+                    <div className='' uk-grid="true">
+                      <div className='uk-width-1-3@m uk-width-1-1 '>
+                        <img className='uk-align-center uk-margin-auto-vertical homeIcons' src='../images/icon-2.png'></img>
+                      </div>
+                      <div className='uk-width-2-3@m uk-width-1-1 uk-margin-auto-vertical '>
+                        <h4 className='uk-margin-small-top  iconParas'>
+                          Roughly 80% less water is used to produce the same amount of protein in crickets as bovine
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='uk-width-1-2@m uk-width-1-1 uk-margin-medium-top '>
+                    <div className='' uk-grid="true">
+                      <div className='uk-width-1-3@m uk-width-1-1 '>
+                        <img className='uk-align-center uk-margin-auto-vertical homeIcons' src='../images/icon-3.png'></img>
+                      </div>
+                      <div className='uk-width-2-3@m uk-width-1-1 uk-margin-auto-vertical '>
+                        <h4 className='uk-margin-small-top  iconParas'>
+                          Crickets are composed of 70-80% protein vs beef which ranges anywhere from 17%-40%
+                          </h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='uk-width-1-2@m uk-width-1-1 uk-margin-medium-top '>
+                    <div className='' uk-grid="true">
+                      <div className='uk-width-1-3@m uk-width-1-1 '>
+                        <img className='uk-align-center uk-margin-auto-vertical homeIcons' src='../images/icon-4.png'></img>
+                      </div>
+                      <div className='uk-width-2-3@m uk-width-1-1 uk-margin-auto-vertical '>
+                        <h4 className='uk-margin-small-top  iconParas'>
+                          80% of the world already eats insects!
+                          </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id='mobileGirlPicChange'>
+              <div className='uk-container'>
+                <div uk-grid='true'>
+                  <div className='uk-width-1-1 uk-align-auto-vertical uk-text-center uk-align-center homePicSpecialContainer'>
+                    <hr style={this.HRstyle2} className='uk-margin-medium-bottom uk-align-center uk-margin-large-top'></hr>
+                    <h1 className='homeHeader1' style={this.style2}><b>CHALLENGE THE <span style={{ color: '#EC2D2D' }}>STATUS QUO</span></b></h1>
+                    <hr style={this.HRstyle2} className='uk-margin-medium-top uk-align-center uk-margin-xlarge-bottom'></hr>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id='homeSpacetaker' className='uk-visible@m'>
           <div id='homeWrapper2'>
             <div className='uk-container '>
               <div className='' uk-grid='true'>
@@ -277,7 +347,7 @@ class Home extends Component {
                   </form>
                 </div>
               </div>
-              
+
             </div>
           </div>
         </div>
