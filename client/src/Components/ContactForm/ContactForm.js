@@ -48,11 +48,7 @@ class ContactForm extends Component {
     subject: {
       val:'',
       touched:false
-    },
-    subject1:{
-      val:'',
-      touched:false
-    },
+    },    
     message: {
       val:'',
       touched:false
@@ -82,25 +78,21 @@ class ContactForm extends Component {
 
    sendEmail = () => {
     
-     if(this.state.name.val.length < 3){
+     if(this.state.name.val.length < 1){
        this.notifyError();
      }else if(/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/.test(this.state.email.val) == false){
       this.notifyError3();
-     }else if(this.state.subject.val.length < 3){
+     }else if(this.state.subject.val.length < 1){
       this.notifyError();
-     }else if(this.state.message.val.length < 3){
+     }else if(this.state.message.val.length < 1){
       this.notifyError();
-     }
-     else if(this.state.subject1.val.length < 3){
-      this.notifyError();
-     }
+     }     
      
      else {
       axios.post("https://baiobar.herokuapp.com/sendEmail", {
         email: this.state.email.val,
          name: this.state.name.val,
-         subject: this.state.subject.val,
-         subject1: this.state.subject1.val,
+         subject: this.state.subject.val,        
          message: this.state.message.val
        })
          .then((response) => {
@@ -142,10 +134,7 @@ class ContactForm extends Component {
         val:'',
         touched:false
       },
-      subject1:{
-        val:'',
-        touched:false
-      },
+      
       message: {
         val:'',
         touched:false
@@ -187,7 +176,7 @@ class ContactForm extends Component {
                                   </div>              
                             </div>
                             <div className="uk-margin">
-                                <div id="emailInput" className="uk-inline uk-width-1-2@m uk-width-1-1">                          
+                                <div id="emailInput" className="uk-inline  uk-width-1-1">                          
                                 <input
                                 value={this.state.subject.val}
                                 onChange={this.handleInputChange}
@@ -196,17 +185,7 @@ class ContactForm extends Component {
                                     className="uk-input ContactInputBody"
                                     type="text"
                                     placeholder="Subject" />
-                                </div>                            
-                                <div style={this.style3}  className="uk-inline uk-width-1-2@m uk-width-1-1 contactMobileAdjust contactFormAdjust">                
-                                  <input
-                                  value={this.state.subject1.val}
-                                  onChange={this.handleInputChange}
-                                  style={this.state.subject1.val.length < 3 && this.state.subject1.touched==true ? this.stlyeInputBarBad : this.stlyeInputBarGood}
-                                  name='subject1'
-                                      className="uk-input ContactInputBody"
-                                      type="text"
-                                      placeholder="Subject" />
-                                  </div>                      
+                                </div>                                                                              
                             </div>
                            
 

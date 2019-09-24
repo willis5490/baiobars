@@ -61,7 +61,7 @@ class Cricketflour extends Component {
                       also actively pursuing ways to protect and preserve our environment.
                       What we want to do is blast open the doors on cricket derived
                       protein, and show others there's nothing to be afraid of! We
-                      (nor our bars) bite! We'll leave that to you and the bar! 
+                      (not our bars) bite! We'll leave that to you and the bar! 
                     </h4>
                     <h4>
                     For more frequently asked questions, take a look at our <Link to='/FAQ'><a href='/FAQ' className='crickFlourMainTextLinks'>FAQ </a></Link>

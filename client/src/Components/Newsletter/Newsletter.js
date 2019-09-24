@@ -62,7 +62,7 @@ class Newsletter extends Component {
                         <div className='' uk-grid='true'>
                             <div className='uk-width-1-1 uk-align-center uk-text-center uk-margin-auto-vertical uk-margin-auto'>
                                 <h1 className='uk-margin-medium-top'>JOIN OUR NEWSLETTER</h1>
-                                <p>Subscribe to hear about our exlusive offers and latest arrivals.</p>
+                                <p>Subscribe to hear about our exclusive offers and latest arrivals.</p>
                                 <div className='uk-align-center uk-text-center uk-margin-medium-bottom'>
                                     <form>
                                         <fieldset className="uk-fieldset  uk-align-center uk-text-center">

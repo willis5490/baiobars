@@ -39,8 +39,7 @@ app.post('/sendEmail', function(req, res) {
     console.log(req.body)
     let Email = JSON.stringify(req.body.email)
     let Name = JSON.stringify(req.body.name)
-    let Subject = JSON.stringify(req.body.subject)
-    let Subject2 = JSON.stringify(req.body.subject1)
+    let Subject = JSON.stringify(req.body.subject)   
     let Message = JSON.stringify(req.body.message)
     
     sgMail.setApiKey(process.env.REACT_APP_SENDGRID_KEY);

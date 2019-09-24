@@ -51,7 +51,7 @@ StoryStyle2={
                 <div id='picsDiv1' style={{padding:'20px', backgroundColor:'#EAEAEB',  }}>
                 <img id='aboutFirstPic'  className='aboutPics uk-margin-xlarge-top uk-align-center' src="../images/Baiobar_Website_Our Story_Ariana.jpg" />
                 </div>
-                <h2 id='aboutTitle' style={{color:'red'}}>ARIAN FRANGOS<br></br> <span  style={{color:'grey'}}>Co-Founder</span></h2>
+                <h2 id='aboutTitle' style={{color:'red'}}>ARIANA FRANGOS<br></br> <span  style={{color:'grey'}}>Co-Founder</span></h2>
                     <p>
                         Ariana has worked in the food industry since the age of 14, helping in her uncle’s pizza shop. She 
                         graduated with a double major in Dietetics and Food business and she has worked in the corporate food 
@@ -91,14 +91,11 @@ StoryStyle2={
                 </div>                
                 <h2 id='aboutTitle' style={{color:'red'}}>GARRET HINCKLEY<br></br> <span  style={{color:'grey'}}>Chief Marketing Officer</span></h2>
                     <p>
-                        Garret is an Army veteran and an advocate of fitness and nutrition. He is a 
-                        NASM personal training certification as well as working on his bachelor’s in 
-                        kinesiology with a concentration in pre-physical therapy. He founded 4 Your 
-                        Health Marketing in order to make the world a healthier place by attracting 
-                        more customers and clients to services and products that improve the health 
-                        of humans and the environment. Garret joined the Baio Bar team because he 
-                        believes in the vision and believes Baio Bar will have a great impact on the 
-                        health of our people and our planet. 
+                      Garret is an Army veteran and an advocate of fitness and nutrition. He is currently working on his bachelor’s
+                      in kinesiology with a concentration in pre-physical therapy. He founded 4 Your Health Marketing in order to make
+                      the world a healthier place by attracting more customers and clients to services and products that improve the
+                      health of humans and the environment. Garret joined the Baio Bar team because he believes in the vision and believes 
+                      Baio Bar will have a great impact on the health of our people and our planet.
                        
                     </p>
               </div> 

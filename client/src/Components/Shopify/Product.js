@@ -207,7 +207,7 @@ class Product extends Component {
     )
 
     return (
-      <div className='uk-width-1-3@m uk-margin-large-top shopProductsDivs uk-width-1-1'>
+      <div className='uk-width-1-3@m uk-width-1-2@s uk-margin-large-top shopProductsDivs'>
         <a onClick={() => this.openModal(this.props.key)} href='#'><img className='shopProductPics uk-align-center' src={variantImage.src} alt={`${this.props.product.title} product shot`} /> </a>
         <div uk-grid='true'>
           <div className='uk-width-2-3 productsTitleMobile'>
