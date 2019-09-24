@@ -757,7 +757,7 @@ width: 190px;
      height: 800px;
 }
 #upwardDownPic{
-    background: url('./images/baiobar girl mountains_mobile2.jpg') no-repeat center center  !important ;
+    background: url('./images/baiobar girl mountains_mobile3.jpg') no-repeat center center  !important ;
     background-position: center;
     background-size: 100% 100%  !important;
     -webkit-background-size:  100% 100%  !important;
@@ -782,19 +782,19 @@ width: 190px;
 }
 #homeWrapper1{
     background: url('./images/baiobar home main header image_mobile.jpg') no-repeat center center ;
-    background-position: center;
+    /* background-position: center;
     background-size: 100% 100% !important;
     -webkit-background-size:   100% 100% !important;
     -moz-background-size:   100% 100% !important;
      -o-background-size:   100% 100% !important;
-     height: 700px; 
-     /* background-position: center ;
+     height: 700px;  */
+     background-position: center ;
      background-repeat: no-repeat;
      background-size: cover;
      -webkit-background-size:   cover;
      -moz-background-size:  cover;
       -o-background-size:  cover;
-     height: 700px; */
+     height: 700px;
 }
 
 .homePicSpecialContainer{
@@ -1012,7 +1012,7 @@ width: 190px;
          -webkit-background-size:   cover;
          -moz-background-size:  cover;
           -o-background-size:  cover;  */
-         height: 550px;
+         height: 550px;     
     }
     .homeHeader1{
         font-size: 40px !important;
@@ -1039,14 +1039,14 @@ width: 190px;
     .homeH4Copy{
         padding-right: 0px !important;
     }
-    #homeSpacetaker{
+    /* #homeSpacetaker{
         background: url('./images/baiobar girl mountains_mobile.jpg') no-repeat center center  !important ;
         background-position: center;
         background-size: 100% 100%  !important;
         -webkit-background-size:  100% 100%  !important;
         -moz-background-size:  100% 100%  !important;
          -o-background-size:   100% 100%   !important;         
-    }
+    } */
     .homePicSpecialContainer{
         margin-bottom: 750px;
     }
