@@ -612,7 +612,7 @@ width: 190px;
      padding: 0px !important;
  }
  #aboutWrapper2{
-    background: linear-gradient(360deg, white 85%, #EAEAEB 15%);
+    background: linear-gradient(360deg, white 85.5%, #EAEAEB 14.5%);
 }
 .specialAboutContainer{
     margin-right: 10px;
@@ -827,7 +827,9 @@ width: 190px;
 }
 
 @media only screen and (max-width:800px) { 
-
+    #aboutWrapper2{
+        background: linear-gradient(360deg, white 86.5%, #EAEAEB 13.5%);
+    }
 
 }
 
@@ -955,7 +957,7 @@ width: 190px;
         background-position: center !important;
     }
     #aboutWrapper2{
-        background: linear-gradient(360deg, white 88%, #EAEAEB 12%);
+        background: linear-gradient(360deg, white 89%, #EAEAEB 11%);
     }
     .aboutStoryText{
         font-size: 50px !important;
@@ -1244,7 +1246,7 @@ width: 190px;
     height: 150px !important;
 }
 #aboutWrapper2{
-    background: linear-gradient(360deg, white 88.5%, #EAEAEB 11.5%);
+    background: linear-gradient(360deg, white 90%, #EAEAEB 10%);
 }
 /* SHOP */
 .shopLifestyleImages{
