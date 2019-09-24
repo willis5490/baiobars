@@ -105,7 +105,13 @@ StoryStyle2={
                 </div>                
                 <h2 id='aboutTitle' style={{color:'red'}}>THOMAS <br></br> ERNY<br></br> <span  style={{color:'grey'}}>Creative Director</span></h2>
                     <p>
-                       
+                      Who is ready for some pure, clean protein power! Boom! Thomas is a just little excited about joining 
+                      the Baiobar team. Can you blame him. With a passion for all things active and a love for environmental 
+                      friendly products, he was the perfect fit to be our creative director. He brings a fresh and clean design 
+                      style to our brand, which we are in love with. Downtime isn't really downtime for this guy. If he isn't 
+                      crushing the keys on the computer creating awesome designs, he is crushing the pedals on his mountain bike. 
+                      His happy place is hiking, biking, running, camping and cruising through the mountains of Colorado with his 
+                      PIC. Keep your eyes out for more beautiful design, photos and packaging from this guy. 
                        
                     </p>
               </div> 
