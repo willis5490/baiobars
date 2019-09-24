@@ -174,7 +174,7 @@ class Home extends Component {
                       </div>
                     </div>
                   </div>
-                  <div className='uk-width-1-2@m uk-width-1-1 uk-margin-medium-top '>
+                  <div className='uk-width-1-2@m uk-width-1-1 uk-margin-medium-top uk-margin-large-bottom '>
                     <div className='' uk-grid="true">
                       <div className='uk-width-1-3@m uk-width-1-1 '>
                         <img className='uk-align-center uk-margin-auto-vertical homeIcons' src='../images/icon-4.png'></img>
