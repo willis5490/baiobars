@@ -15,7 +15,7 @@ class Products extends Component {
     });
 
     return (
-      <div className='uk-container' >
+      <div className='uk-container productsContainer' >
         <div uk-grid='true'> 
           {products}
         </div>                     
