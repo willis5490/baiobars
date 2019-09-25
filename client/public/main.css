@@ -125,7 +125,27 @@ p,h3,h4,h5,h6{
     }
 
 
-/* NAV */
+/* NAV */  
+
+   #header{
+    position: relative;
+}
+#mobileMenu2{
+    position: absolute;
+    right: -0px;
+    top: 7px;
+}
+#logo-nav-mobile{
+    width: 60px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.uk-nav-divider {
+    margin: 5px 0;
+    margin-left: 10px;
+}
 .cartContainer{
     
     position: relative;
