@@ -124,7 +124,10 @@ class Header extends Component {
     )
 
     const sideBarButton = (
-      <Link onClick={this.openNavHandler} id="mobileMenu" uk-icon="icon: menu; ratio: 2.5"></Link>
+      <div>
+      <Link to='/'><img id='logo-nav-mobile' src="../images/Cricket-Logo_Header_BLK.png"></img></Link>
+    <Link onClick={this.openNavHandler}  id="mobileMenu2" uk-icon="icon: menu; ratio: 2.5"></Link>
+    </div>
     )
     console.log(this.props)
     return (
@@ -156,6 +159,7 @@ class Header extends Component {
                 <a target='_blank' href="https://www.instagram.com/baiobarprotein/" className="uk-icon-button uk-margin-auto-vertical" style={this.style3} uk-icon="instagram"></a>
                 <a target='_blank' href="https://business.facebook.com/baiobar/?ref=your_pages " className="uk-icon-button uk-margin-auto-vertical" style={this.style3} uk-icon="facebook"></a>
                 <a target='_blank' href="https://www.linkedin.com/company/baio-bar/about/?viewAsMember=true" className="uk-icon-button uk-margin-auto-vertical" style={this.style3} uk-icon="linkedin"></a>
+                <a target='_blank' href="https://www.pinterest.com/baiobar/" className="uk-icon-button uk-margin-auto-vertical" style={this.style3} uk-icon="pinterest"></a>
               </ul>
             </div>
 

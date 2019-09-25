@@ -47,6 +47,7 @@ style6={
                     <a target='_blank' href='https://www.instagram.com/baiobarprotein/'><span style={this.style2}  class="uk-icon-button footerIcons " uk-icon="icon:instagram"></span></a>
                     <a target='_blank' href='https://business.facebook.com/baiobar/?ref=your_pages '><span style={this.style2} class="uk-icon-button footerIcons" uk-icon="icon:facebook"></span></a> 
                     <a target='_blank' href='https://www.linkedin.com/company/baio-bar/about/?viewAsMember=true'><span style={this.style2} class="uk-icon-button footerIcons" uk-icon="icon:linkedin"></span></a> 
+                    <a target='_blank' href='https://www.pinterest.com/baiobar/'><span style={this.style2} class="uk-icon-button footerIcons" uk-icon="icon:pinterest"></span></a>
                     </div>
                     <br></br>
                     <div className='uk-margin-remove-bottom uk-align-right@m uk-align-center uk-visible@m' >
@@ -84,7 +85,8 @@ style6={
                     <a  target='_blank' href='https://twitter.com/bar_baio'><span style={this.style2}  class="uk-icon-button footerIcons" uk-icon="icon:twitter"></span></a>
                     <a  target='_blank' href='https://www.instagram.com/baiobarprotein/'><span style={this.style2}  class="uk-icon-button footerIcons " uk-icon="icon:instagram"></span></a>
                     <a  target='_blank' href='https://business.facebook.com/baiobar/?ref=your_pages '><span style={this.style2} class="uk-icon-button footerIcons" uk-icon="icon:facebook"></span></a> 
-                    <a  target='_blank' href='https://www.linkedin.com/company/baio-bar/about/?viewAsMember=true'><span style={this.style2} class="uk-icon-button footerIcons" uk-icon="icon:linkedin"></span></a> 
+                    <a  target='_blank' href='https://www.linkedin.com/company/baio-bar/about/?viewAsMember=true'><span style={this.style2} class="uk-icon-button footerIcons" uk-icon="icon:linkedin"></span></a>
+                    <a  target='_blank' href='https://www.pinterest.com/baiobar/'><span style={this.style2} class="uk-icon-button footerIcons" uk-icon="icon:pinterest"></span></a> 
                   </div>
               </div>
               <div className='uk-width-1-1 uk-margin-remove-top'>
