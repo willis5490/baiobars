@@ -43,7 +43,7 @@ style6={
               <div className='uk-width-1-2@m uk-width-1-1  uk-margin-auto-vertical'>
                 <div className='uk-align-right@m uk-align-center'>
                     <div className='uk-margin-small-bottom uk-align-right@m uk-align-center footerIconWrpper '>
-                    <a target='_blank' href='https://twitter.com/bar_baio'><span style={this.style2}  class="uk-icon-button footerIcons" uk-icon="icon:twitter"></span></a>
+                    <a target='_blank' href='https://twitter.com/baio_bar'><span style={this.style2}  class="uk-icon-button footerIcons" uk-icon="icon:twitter"></span></a>
                     <a target='_blank' href='https://www.instagram.com/baiobarprotein/'><span style={this.style2}  class="uk-icon-button footerIcons " uk-icon="icon:instagram"></span></a>
                     <a target='_blank' href='https://business.facebook.com/baiobar/?ref=your_pages '><span style={this.style2} class="uk-icon-button footerIcons" uk-icon="icon:facebook"></span></a> 
                     <a target='_blank' href='https://www.linkedin.com/company/baio-bar/about/?viewAsMember=true'><span style={this.style2} class="uk-icon-button footerIcons" uk-icon="icon:linkedin"></span></a> 
@@ -82,7 +82,7 @@ style6={
               </div>
               <div className='uk-width-1-1 uk-margin-auto-vertical uk-text-center uk-margin-auto uk-margin-small-top'>
                   <div className=' uk-align-center footerIconWrpper '>
-                    <a  target='_blank' href='https://twitter.com/bar_baio'><span style={this.style2}  class="uk-icon-button footerIcons" uk-icon="icon:twitter"></span></a>
+                    <a  target='_blank' href='https://twitter.com/baio_bar'><span style={this.style2}  class="uk-icon-button footerIcons" uk-icon="icon:twitter"></span></a>
                     <a  target='_blank' href='https://www.instagram.com/baiobarprotein/'><span style={this.style2}  class="uk-icon-button footerIcons " uk-icon="icon:instagram"></span></a>
                     <a  target='_blank' href='https://business.facebook.com/baiobar/?ref=your_pages '><span style={this.style2} class="uk-icon-button footerIcons" uk-icon="icon:facebook"></span></a> 
                     <a  target='_blank' href='https://www.linkedin.com/company/baio-bar/about/?viewAsMember=true'><span style={this.style2} class="uk-icon-button footerIcons" uk-icon="icon:linkedin"></span></a>

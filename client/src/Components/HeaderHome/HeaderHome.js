@@ -135,7 +135,7 @@ class HeaderHome extends Component {
                     <Link to="/ShoppingCart"><span className='cartPicture' style={{ backgroundColor: '#EC2B2C', color: 'white', fontWeight: this.props.cart, fontSize: '20px' }} href="/ShoppingCart"><i className="fas fa-2x fa-shopping-cart uk-margin-small-right"></i> CART</span></Link>
                   </li>
                   <hr className="uk-divider-vertical uk-margin-small-right uk-margin-auto-vertical" style={this.style2}></hr>
-                  <a target='_blank' href="https://twitter.com/bar_baio" className="uk-icon-button uk-margin-auto-vertical" style={this.style3} uk-icon="twitter"></a>
+                  <a target='_blank' href="https://twitter.com/baio_bar" className="uk-icon-button uk-margin-auto-vertical" style={this.style3} uk-icon="twitter"></a>
                   <a target='_blank' href="https://www.instagram.com/baiobarprotein/" className="uk-icon-button uk-margin-auto-vertical" style={this.style3} uk-icon="instagram"></a>
                   <a target='_blank' href="https://business.facebook.com/baiobar/?ref=your_pages" className="uk-icon-button uk-margin-auto-vertical" style={this.style3} uk-icon="facebook"></a>
                   <a target='_blank' href="https://www.linkedin.com/company/baio-bar/about/?viewAsMember=true" className="uk-icon-button uk-margin-auto-vertical" style={this.style3} uk-icon="linkedin"></a>
