@@ -105,14 +105,14 @@ class HeaderHome extends Component {
     const sideBarButton = (      
       <div>
         <Link to='/'><img id='logo-nav-mobile' src="../images/Cricket-Logo_Header_WHT.png"></img></Link>
-      <Link onClick={this.openNavHandler}  id="mobileMenu2" uk-icon="icon: menu; ratio: 2.5"></Link>
+        <Link onClick={this.openNavHandler}  id="mobileMenu2" uk-icon="icon: menu; ratio: 2.5"></Link>
       </div>
       
     )
     return (
       <div>
         <div style={{ backgroundColor: '#EC2B2C' }}>
-          <div style={this.style9} uk-sticky="sel-target: .uk-navbar-container;  cls-active: uk-navbar-sticky">
+          <div id='test2' style={this.style9} uk-sticky="sel-target: .uk-navbar-container;  cls-active: uk-navbar-sticky">
             <nav id='header' style={this.style1} className="uk-navbar-container " uk-navbar='true' uk-navbar="mode: click">
               <div style={{ paddingLeft: '50px' }} className="uk-navbar-left uk-visible@l ">
                 <ul className="uk-navbar-nav">
