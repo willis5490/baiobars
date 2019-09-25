@@ -1,4 +1,15 @@
- 
+ /* .beep{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    right: -150px
+ } */
+ .ModalXButton{
+     background-color: #222;
+     border: 1px solid #e5e5e5;
+     display: inline-block;
+    padding: 5px 10px 5px 10px
+ }
  /* MODALS */
 .ReactModal__Content, .ReactModal__Content--after-open {
     position: absolute;

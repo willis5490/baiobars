@@ -223,12 +223,10 @@ class Product extends Component {
           contentLabel="Example Modal"
           className=""
         >
-          <div className='uk-margin-small-top '>
+          <div className='beep'>
             <div className='uk-container'>
-              <div uk-grid='true'>
-                <div className='uk-width-1-1 uk-text-right uk-margin-remove-bottom'>
-                  <a><h4 style={{ color: '#EC2B2C' }} onClick={this.closeModal}>X</h4></a>
-                </div>
+              <div className='uk-text-right'>
+              <button className='ModalXButton' onClick={this.closeModal} ><a onClick={this.closeModal}><h4 style={{color:'#EC2B2C'}} className='uk-margin-auto-vertical '>X</h4></a></button>  
               </div>
             </div>
           </div>
