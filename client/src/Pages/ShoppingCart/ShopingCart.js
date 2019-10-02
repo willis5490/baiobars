@@ -41,7 +41,7 @@ class Shoppingcart extends Component {
   }
   // render nav
   render() {
-    console.log(this.props)
+    // console.log(this.props)
     return (
       <div>
         <Header {...this.props} cart={900}></Header>

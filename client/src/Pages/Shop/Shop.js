@@ -19,7 +19,7 @@ class Shop extends Component {
 
   // render nav
   render() {
-    console.log(this.props)
+    // console.log(this.props)
     return (
       <div>
         <Header {...this.props} shop={900} ></Header>

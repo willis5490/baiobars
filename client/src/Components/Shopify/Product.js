@@ -127,7 +127,7 @@ class Product extends Component {
 
 
   render() {
-    console.log(this.state.images)
+    // console.log(this.state.images)
 
     let variantImage = this.props.product.images[this.props.product.images.length - 1] || this.props.product.images[0]
     let variant = this.state.selectedVariant || this.props.product.variants[0]

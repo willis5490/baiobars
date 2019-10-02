@@ -30,7 +30,7 @@ class Newsletter extends Component {
             email: this.state.userEmail,
           })
             .then((response) => {
-              console.log(response)
+            //   console.log(response)
             })
             .catch((err) => {
               console.log(err)

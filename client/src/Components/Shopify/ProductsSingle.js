@@ -70,8 +70,8 @@ style2={
 
   
   render() {
-    console.log(this.state)
-    console.log(this.props)
+    // console.log(this.state)
+    // console.log(this.props)
     let variantImage = this.state.selectedVariantImage || this.props.product.images[0]
     let variant = this.state.selectedVariant || this.props.product.variants[0]
     let variantQuantity = this.state.selectedVariantQuantity || 1

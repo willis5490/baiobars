@@ -96,10 +96,10 @@ class ContactForm extends Component {
          message: this.state.message.val
        })
          .then((response) => {
-          console.log(response)
+          // console.log(response)
          })
          .catch((err) => {
-           console.log(err)
+          //  console.log(err)
          })
          this.notify();
          this.emptyFields();

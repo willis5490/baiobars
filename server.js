@@ -44,8 +44,8 @@ app.post('/sendEmail', function(req, res) {
     
     sgMail.setApiKey(process.env.REACT_APP_SENDGRID_KEY);
     const msg = {
-      to: "william.stearns303@gmail.com",
-      from: "william.stearns303@gmail.com",
+      to: "info@baiobar.com",
+      from: "info@baiobar.com",
       subject: Name + "is looking for " + Subject,
       text: Subject,
       html: Name + " has a message for you. The message says:   " + Message +".     respond to:  " + Email,
@@ -60,8 +60,8 @@ app.post('/sendEmail', function(req, res) {
     
     sgMail.setApiKey(process.env.REACT_APP_SENDGRID_KEY);
     const msg = {
-      to: "william.stearns303@gmail.com",
-      from: "william.stearns303@gmail.com",
+      to: "info@baiobar.com",
+      from: "info@baiobar.com",
       subject: 'Baio-Bar Newsletter Update',
       text: Email,
       html: Email + " Want To Subscribe To Your Newsletter",

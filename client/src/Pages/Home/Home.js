@@ -108,7 +108,7 @@ class Home extends Component {
 
   // render nav
   render() {
-    console.log();
+    // console.log();
 
     return (
       <div>
