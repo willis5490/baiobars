@@ -40,7 +40,7 @@ class Home extends Component {
     if (/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/.test(this.state.userEmail) == false) {
       this.notifyError();
     } else {
-      axios.post("https://baiobar.herokuapp.com/sendNewsletter", {
+      axios.post("https://www.baiobar.com/sendNewsletter", {
         email: this.state.userEmail,
       })
         .then((response) => {
