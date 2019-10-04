@@ -145,7 +145,7 @@ StoryStyle2={
 
         <div id='aboutWrapper4'>
           <div className='specialAboutContainer uk-margin-large-bottom'>
-            <div className='uk-margin-large-top' uk-grid='true'>
+            <div className='uk-margin-large-top uk-grid-match' uk-grid='true'>
                 <div className='uk-width-2-5@m uk-width-1-1'>
                   <img  className='aboutMiddlePicsLarge' src="..\images\Baiobar_Website_Our Story_Image_1.jpg" />
                 </div>

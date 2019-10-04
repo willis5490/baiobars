@@ -81,7 +81,7 @@ class Insta extends Component {
             <div className='uk-width-1-5@m uk-width-1-2@s uk-width-1-2'>
               <img className='instagramPics' src={this.state.images[3]}></img>
             </div>
-            <div className='uk-width-1-5@m uk-width-1-2@s  uk-width-1-1'>
+            <div className='uk-width-1-5@m uk-width-1-2@s  uk-width-1-1 uk-visible@s'>
               <img className='instagramPics' src={this.state.images[4]}></img>
             </div>
           </div>

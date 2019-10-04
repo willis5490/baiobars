@@ -409,8 +409,9 @@ width: 190px;
 .instagramPics{
     width: 100%;
     display: block;
-    height: 100%;
+    height: 210px;
 }
+
 
 
 /* SHOP */
@@ -632,6 +633,11 @@ width: 190px;
 
  /* Instagram Component */
 .instagramPics{
+    width: 100%;
+        display: block;
+        height: 100%;
+}
+.instagramPics1{
     width: 100%;
         display: block;
         height: 100%;
