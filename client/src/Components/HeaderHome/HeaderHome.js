@@ -124,7 +124,7 @@ class HeaderHome extends Component {
                 <ul id="middlenav" style={this.style1} className="uk-navbar-nav">
                   <li className={this.props.cricket}><Link to='Cricketflour'><span style={this.style1} href="/Cricketflour">CRICKET FLOUR</span></Link></li>
                   <li className={this.props.shop}><Link to="/Shop"><span style={this.style1} href="/Shop">SHOP</span></Link></li>
-                  <li className={this.props.story}><Link to="/OurStory"><span style={this.style1} href="/OurStory">OUR STROY</span></Link></li>
+                  <li className={this.props.story}><Link to="/OurStory"><span style={this.style1} href="/OurStory">OUR STORY</span></Link></li>
                   <li className={this.props.faq}><Link to='/FAQ'><span style={this.style1} href="/FAQ">FAQ</span></Link></li>
                   <li className={this.props.connect}><Link to="/Contact"><span style={this.style1} href="/Contact">CONNECT</span></Link></li>
                   <hr className="uk-divider-vertical uk-margin-auto-vertical" style={this.style2}></hr>
