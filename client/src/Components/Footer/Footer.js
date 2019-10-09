@@ -38,7 +38,7 @@ style6={
           <div className='uk-container uk-margin-medium-top'>
             <div className='uk-visible@m' uk-grid='true'>
               <div className='uk-width-1-2@m uk-width-1-1 uk-align-center uk-margin-auto-vertical'>
-               <Link to='/'><a href='/'><img className='footerLogo ' src='../images/Cricket-Logo_Header_BLK.png'></img></a></Link>
+               {/* <Link to='/'><a href='/'><img className='footerLogo ' src='../images/Cricket-Logo_Header_BLK.png'></img></a></Link> */}
               </div>
               <div className='uk-width-1-2@m uk-width-1-1  uk-margin-auto-vertical'>
                 <div className='uk-align-right@m uk-align-center'>
@@ -78,7 +78,7 @@ style6={
 
             <div className='uk-hidden@m' uk-grid='true'>
               <div className='uk-width-1-1 uk-margin-auto-vertical uk-margin-auto '>          
-                <Link to='/'><img className='footerLogo uk-align-center uk-margin-small-bottom' src='../images/Cricket-Logo_Header_BLK.png'></img></Link>
+                {/* <Link to='/'><img className='footerLogo uk-align-center uk-margin-small-bottom' src='../images/Cricket-Logo_Header_BLK.png'></img></Link> */}
               </div>
               <div className='uk-width-1-1 uk-margin-auto-vertical uk-text-center uk-margin-auto uk-margin-small-top'>
                   <div className=' uk-align-center footerIconWrpper '>

@@ -125,7 +125,7 @@ class Header extends Component {
 
     const sideBarButton = (
       <div>
-      <Link to='/'><img id='logo-nav-mobile' src="../images/Cricket-Logo_Header_BLK.png"></img></Link>
+      <Link to='/'><img id='logo-nav-mobile' src="../images/Baiobar_Logo_Words_BLK.png"></img></Link>
     <Link onClick={this.openNavHandler}  id="mobileMenu2" uk-icon="icon: menu; ratio: 2.5"></Link>
     </div>
     )
@@ -136,7 +136,7 @@ class Header extends Component {
           <nav id='header' style={this.style1} className="uk-navbar-container " uk-navbar='true' uk-navbar="mode: click">
             <div style={{ paddingLeft: '50px' }} className="uk-navbar-left uk-visible@l ">
               <ul className="uk-navbar-nav">
-                <li className=""><Link to='/' ><img id='logo-nav' src="../images/Cricket-Logo_Header_BLK.png" alt=''></img></Link></li>
+                <li className=""><Link to='/' ><img id='logo-nav' src="../images/Baiobar_Logo_Words_BLK.png" alt=''></img></Link></li>
 
               </ul>
             </div>
