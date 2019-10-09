@@ -147,8 +147,8 @@ p,h3,h4,h5,h6{
     top: 7px;
 }
 #logo-nav-mobile{
-    width: 60px;
-    height: 40px;
+    width: 150px;
+    height: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
@@ -182,7 +182,7 @@ p,h3,h4,h5,h6{
 
 
 #logo-nav{
-    width: 75px;
+    width: 150px;
     height: 50px;    
 }
 .uk-navbar-nav>li>a{
@@ -500,8 +500,8 @@ width: 190px;
         top: 7px;
     }
     #logo-nav-mobile{
-        width: 60px;
-        height: 40px;
+        width: 150px;
+        height: 50px;
         margin-top: 10px;
         margin-bottom: 10px;
         margin-left: 10px;
@@ -896,8 +896,8 @@ width: 190px;
         top: 7px;
     }
     #logo-nav-mobile{
-        width: 60px;
-        height: 40px;
+        width: 150px;
+        height: 50px;
         margin-top: 10px;
         margin-bottom: 10px;
         margin-left: 10px;
@@ -919,7 +919,7 @@ width: 190px;
         top: 7px;
     }
     #logo-nav-mobile{
-        width: 60px;
+        width: 120px;
         height: 40px;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -1240,13 +1240,13 @@ width: 190px;
         right: -50px;
         top: 7px;
     }
-    #logo-nav-mobile{
+    /* #logo-nav-mobile{
         width: 60px;
         height: 40px;
         margin-top: 10px;
         margin-bottom: 10px;
         margin-left: 10px;
-    }
+    } */
 
 
     /* MODALS */
