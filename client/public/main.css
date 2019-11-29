@@ -1020,6 +1020,7 @@ width: 190px;
         bottom: 19em !important;
         margin: auto !important;
         padding-right: 10px !important;
+        padding-left: 10px !important;
     }
     .Toastify__toast--default {
        width: 80% !important;
@@ -1030,6 +1031,8 @@ width: 190px;
     .Toastify__toast-container--default {
         width: 100% !important;
         margin: auto !important;
+        padding-right: 10px !important;
+        padding-left: 10px !important;
      }
      .Toastify__toast--success{
         width: 80% !important;
