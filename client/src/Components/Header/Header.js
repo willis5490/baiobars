@@ -129,7 +129,7 @@ class Header extends Component {
     <Link onClick={this.openNavHandler}  id="mobileMenu2" uk-icon="icon: menu; ratio: 2.5"></Link>
     </div>
     )
-    console.log(this.props)
+    // console.log(this.props)
     return (
       <div>
         <div style={this.style9} uk-sticky="sel-target: .uk-navbar-container;  cls-active: uk-navbar-sticky">
